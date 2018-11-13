@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( 'post' === get_post_type() ) :	?> <?php // TODO: MAYBE MOVE THIS ?>
+		<?php if ( 'post' === get_post_type() ) :	?> <?php // TODO: REMOV THIS ?>
 			<div class="entry-meta">
 				<?php
 				zuari_posted_on();
