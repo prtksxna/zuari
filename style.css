@@ -1,0 +1,48 @@
+/*!
+Theme Name: zuari
+Theme URI: https://github.com/prtksxna/zuari
+Author: Prateek Saxena
+Author URI: http://prtksxna.com
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: zuari
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+
+zuari is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'IBM Plex Serif', serif;
+	background: #ddd;
+}
+
+h1 {
+  font-family: 'IBM Plex Mono', monospace;
+	letter-spacing: -0.5px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+h1 a,
+h2 a {
+  text-decoration: none;
+}
+
+
+#page {
+  max-width: 600px;
+	margin-left: 10rem;
+}
