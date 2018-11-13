@@ -44,6 +44,26 @@ add_action( 'wp_head', 'zuari_pingback_header' );
  *  4. Photo
  */
 function zuari_post_type_discovery() {
+	if (
+			has_post_thumbnail() &&
+			get_the_content() === ""
+	) {
+		return 'photo';
+	}
 
-	echo get_post_type();
+	if (
+		get_the_content() === '' &&
+		get_the_title() !== ''
+	) {
+		return 'status';
+	}
+
+	if (
+		get_the_content() !== '' &&
+		get_the_title() === ''
+	) {
+		return 'note';
+	}
+
+	return get_post_type();
 }
