@@ -37,18 +37,19 @@ function zuari_pingback_header() {
 add_action( 'wp_head', 'zuari_pingback_header' );
 
 /**
- * Detect what type of blog post this is, options could be:
- *  1. Essay
- *  2. Note
- *  3. Status
- *  4. Photo
+ * Detect what type of blog post this is. The return values should match
+ * get_post_format values where possible
+ *
+ * @link https://codex.wordpress.org/Function_Reference/get_post_format
+ * @link https://www.w3.org/TR/post-type-discovery/
+ * @return String
  */
 function zuari_post_type_discovery() {
 	if (
 			has_post_thumbnail() &&
 			get_the_content() === ""
 	) {
-		return 'photo';
+		return 'image';
 	}
 
 	if (
@@ -62,7 +63,7 @@ function zuari_post_type_discovery() {
 		get_the_content() !== '' &&
 		get_the_title() === ''
 	) {
-		return 'note';
+		return 'aside';
 	}
 
 	return get_post_type();
