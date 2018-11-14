@@ -41,8 +41,18 @@ h2 a {
   text-decoration: none;
 }
 
-
 #page {
   max-width: 600px;
 	margin-left: 10rem;
+}
+
+/* Post format */
+.type-status {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+.type-aside {
+  font-family: 'IBM Plex Sans', sans-serif;
 }

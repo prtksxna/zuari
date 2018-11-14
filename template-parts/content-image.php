@@ -1,9 +1,8 @@
 <?php
 /**
- * Template part for displaying posts
+ * Template part for displaying image posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package zuari
  */
 
@@ -11,22 +10,21 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( 'post' === get_post_type() ) :	?> <?php // TODO: REMOVE THIS ?>
-			<div class="entry-meta">
-				<?php
-				zuari_posted_on();
-				zuari_posted_by();
-				zuari_entry_footer();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif;
-
+		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif; ?>
 	</header><!-- .entry-header -->
+
+	<div class="entry-meta">
+		<?php
+		zuari_posted_on();
+		zuari_posted_by();
+		zuari_entry_footer();
+		?>
+	</div><!-- .entry-meta -->
 
 	<?php zuari_post_thumbnail(); ?>
 
