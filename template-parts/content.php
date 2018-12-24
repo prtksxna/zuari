@@ -10,17 +10,17 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php if ( 'post' === get_post_type() ) :	?> <?php // TODO: MAYBE MOVE THIS ?>
+		<div class="entry-meta">
+			<?php
+			zuari_posted_on();
+			zuari_posted_by();
+			zuari_entry_footer();
+			?>
+		</div><!-- .entry-meta -->
+	<?php endif;?>
 	<header class="entry-header">
-		<?php if ( 'post' === get_post_type() ) :	?> <?php // TODO: MAYBE MOVE THIS ?>
-			<div class="entry-meta">
-				<?php
-				zuari_posted_on();
-				zuari_posted_by();
-				zuari_entry_footer();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif;
-
+		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :

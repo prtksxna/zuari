@@ -16,16 +16,20 @@ zuari is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic,
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
+/* Type */
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 18px;
   line-height: 1.5;
   font-family: 'IBM Plex Serif', serif;
 	background: #ddd;
-}
-
-h1 {
-  font-family: 'IBM Plex Mono', monospace;
-	letter-spacing: -0.5px;
+  background-image: url('baseline.png');
 }
 
 h2, h3, h4, h5, h6 {
@@ -42,8 +46,50 @@ h2 a {
 }
 
 #page {
-  max-width: 600px;
-	margin-left: 10rem;
+  /*max-width: 600px;
+	margin-left: 15rem;*/
+}
+
+/* Header */
+.site-header {
+  margin-left: 12rem;
+}
+
+.site-header .site-title {
+  font-family: 'IBM Plex Mono', monospace;
+	letter-spacing: -0.5px;
+  line-height: 1;
+  font-size: 3rem;
+  margin-top: 12.5rem;
+  margin-bottom: 0.15rem;
+}
+
+.site-description {
+  font-style: italic;
+}
+
+/* Navigation */
+nav {
+  display: none;
+}
+
+/* Post & Meta */
+.entry-header {
+  display: flex;
+}
+
+.entry-meta {
+  font-size: 0.8rem;
+  text-align: right;
+  width: 12rem;
+}
+
+.entry-meta span {
+  display: block;
+}
+
+.entry-content {
+  width: 40rem;
 }
 
 /* Post format */
@@ -55,4 +101,46 @@ h2 a {
 
 .type-aside {
   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+/* Accessibility */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
 }
