@@ -9,19 +9,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<div class="entry-meta">
-			<?php
-			zuari_posted_on();
-			zuari_posted_by();
-			zuari_entry_footer();
-			?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+	<div class="entry-meta">
+		<?php
+		zuari_posted_on();
+		zuari_posted_by();
+		zuari_entry_footer();
+		?>
+	</div><!-- .entry-meta -->
 
-	<?php zuari_post_thumbnail(); ?>
-
-	<div class="entry-content type-aside">
+	<div class="entry-content type-aside entry">
 		<?php
 		the_content( sprintf(
 			wp_kses(

@@ -9,7 +9,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
 		<div class="entry-meta">
 			<?php
 			zuari_posted_on();
@@ -23,5 +22,4 @@
 		else :
 			the_title( '<h2 class="entry-title type-status"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif; ?>
-	</header><!-- .entry-header -->
 </article><!-- #post-<?php the_ID(); ?> -->
