@@ -44,6 +44,14 @@ h2 a {
   text-decoration: none;
 }
 
+blockquote {
+  margin: 0 2.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-style: italic;
+  font-weight: 300;
+}
+
 #page {
   /*max-width: 600px;
 	margin-left: 15rem;*/
