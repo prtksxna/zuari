@@ -75,9 +75,46 @@ blockquote {
   font-style: italic;
 }
 
+.top-bar {
+  margin: 0;
+  padding: 1rem;
+}
+
+.top-bar .site-title {
+  float: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.top-bar nav {
+  float: right;
+}
+
 /* Navigation */
-nav {
-  display: none;
+.menu-toggle {
+  display: none; /* TODO: Add support for this */
+}
+.nav-menu {
+  list-style: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.nav-menu li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+}
+
+nav .children {
+  display: none; /* TODO:Add support for this */
 }
 
 /* Post & Meta */
@@ -112,6 +149,15 @@ nav {
   margin-top: 1.1rem;
   margin-bottom: -0.3rem;
   font-size: 2rem;
+}
+
+.entry-header h1 {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  margin-top: 1.1rem;
+  margin-bottom: -0.3rem;
+  font-size: 3rem;
+  letter-spacing: -1px;
+  line-height: 1.1;
 }
 
 .entry-title.type-status {
