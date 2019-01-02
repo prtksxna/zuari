@@ -14,6 +14,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+		<?php if ( is_active_sidebar( 'sidebar-footer' ) ) { ?>
+			<div class="widget-area">
+				<?php dynamic_sidebar( 'sidebar-footer' ); ?>
+			</aside><!-- #secondary -->
+		<?php } ?>
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'zuari' ) ); ?>">
 				<?php
