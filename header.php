@@ -39,7 +39,7 @@
 		<?php if ( is_active_sidebar( 'sidebar-intro' ) ) { ?>
 			<div class="widget-area">
 				<?php dynamic_sidebar( 'sidebar-intro' ); ?>
-			</aside><!-- #secondary -->
+			</div><!-- #secondary -->
 		<?php } ?>
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'zuari' ); ?></button>
