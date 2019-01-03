@@ -76,18 +76,18 @@ blockquote {
 }
 
 .top-bar {
-  margin: 0;
-  padding: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  margin-left: 20rem;
 }
 
 .top-bar .site-title {
-  float: left;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1rem;
 }
 
-.top-bar nav {
-  float: right;
+.top-bar .nav-menu{
+  font-weight: normal !important;
 }
 
 /* Navigation */

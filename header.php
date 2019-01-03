@@ -54,7 +54,14 @@
 	<?php } else { ?>
 		<header class="top-bar">
 			<?php the_custom_logo(); ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<?php $zuari_description = get_bloginfo( 'description', 'display' );
+				if ( $zuari_description || is_customize_preview() ) :
+					?>
+					<span class="site-description">&mdash; <?php echo $zuari_description; /* WPCS: xss ok. */ ?></span>
+				<?php endif; ?>
+			</h1>
 			<nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'zuari' ); ?></button>
 				<?php
