@@ -208,9 +208,11 @@ nav .children {
 }
 
 /* Post & Meta */
-.post {
+article.page,
+article.post {
   display: flex;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   /* background-image: url('baseline.png'); */
 }
 
@@ -254,7 +256,7 @@ nav .children {
   width: 40rem;
 }
 
-.entry-content p{
+.entry-content p {
   margin-bottom: 1.7rem;
 }
 
