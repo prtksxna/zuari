@@ -16,6 +16,14 @@ zuari is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic,
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
+/* Colors */
+:root {
+  --bg-color: #ee8a79;
+  /* --bg-color: #9ACAC1; */
+  --fg-color: #000000;
+}
+
+
 /* Type */
 *,
 body,
@@ -28,9 +36,8 @@ body {
   font-size: 18px;
   line-height: 1.5;
   font-family: 'IBM Plex Serif', serif;
-	background: #eee;
-  background: #9ACAC1;
-  background: #EE8A79;
+  background: var(--bg-color);
+  color: var(--fg-color);
 }
 
 h2, h3, h4, h5, h6 {
@@ -38,7 +45,7 @@ h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: black;
+  color: var(--fg-color);
 }
 
 h1 a,
