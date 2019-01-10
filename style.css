@@ -28,7 +28,9 @@ body {
   font-size: 18px;
   line-height: 1.5;
   font-family: 'IBM Plex Serif', serif;
-	background: #ddd;
+	background: #eee;
+  background: #9ACAC1;
+  background: #EE8A79;
 }
 
 h2, h3, h4, h5, h6 {
@@ -119,9 +121,8 @@ nav .children {
 
 .post-navigation,
 .posts-navigation {
-  background: rgba( 255, 255, 255, 0.2 );
+  background: rgba( 255, 255, 255, 0.4 );
   padding-left: 19rem;
-  margin-top: 6rem;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -150,7 +151,6 @@ nav .children {
 .nav-previous a:hover,
 .nav-next a:hover {
   padding: 2rem 1rem;
-  background: rgba( 255, 255, 255, 0.2 )
 }
 
 .nav-previous a:before {
@@ -161,10 +161,47 @@ nav .children {
   content: ' →';
 }
 
+/* Comments */
+.comments-area {
+  background: rgba( 255, 255, 255, 0.2 );
+  padding: 5rem 0 5rem 20rem;
+  margin-top: 5rem;
+  font-size: 0.9rem;
+}
+
+.comment-list {
+  width: 40rem;
+}
+
+.comment-list li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.comment-author img,
+.comment-list .reply,
+.comment-list .says {
+  display: none;
+}
+
+.comment-author,
+.comment-author a {
+  font-weight: normal;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.comment-metadata {
+  display: none;
+}
+
+.comment-content {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
 
 /* Footer */
 .site-footer {
-  background: rgba( 255, 255, 255, 0.2 );
+  background: rgba( 255, 255, 255, 0.4 );
   font-family: 'IBM Plex Sans', sans-serif;
   padding: 2rem 0 2rem 20rem;
   font-size: 0.8rem;
