@@ -14,12 +14,17 @@ get_header();
 		<main id="main" class="site-main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'zuari' ); ?></h1>
+				<header class="page-header archive-header">
+					<h1 class="page-title archive-header__title">
+						<span class="archive-header__title__type">404</span>
+						<?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'zuari' ); ?>
+					</h1>
+					<p>
+						<?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'zuari' ); ?>
+					</p>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'zuari' ); ?></p>
+				<div class="page-content content-404">
 
 					<?php
 					get_search_form();

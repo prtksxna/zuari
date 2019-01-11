@@ -63,6 +63,7 @@ blockquote {
 
 .archive-header {
   margin-left: 20rem;
+  width: 40rem;
 }
 
 .archive-header__title {
@@ -76,6 +77,16 @@ blockquote {
   font-variant: small-caps;
   font-weight: 400;
   margin-bottom: -0.5rem;
+}
+
+.content-404 {
+  margin-left: 20rem;
+  width: 40rem;
+  margin-bottom: 5rem;
+}
+
+.content-404 h2 {
+  margin-top: 2rem;
 }
 
 #page {
