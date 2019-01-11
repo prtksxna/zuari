@@ -61,6 +61,23 @@ blockquote {
   font-weight: 300;
 }
 
+.archive-header {
+  margin-left: 20rem;
+}
+
+.archive-header__title {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.archive-header__title__type {
+  font-size: 1.2rem;
+  display: block;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: 400;
+  margin-bottom: -0.5rem;
+}
+
 #page {
   /*max-width: 600px;
 	margin-left: 15rem;*/
