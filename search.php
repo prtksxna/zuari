@@ -15,12 +15,15 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'zuari' ), '<span>' . get_search_query() . '</span>' );
-					?>
+			<header class="archive-header">
+				<h1 class="page-title archive-header__title">
+					<span class="archive-header__title__type">
+						<?php
+						/* translators: %s: search query. */
+						printf( esc_html__( 'Search Results for', 'zuari' ) );
+						?>
+					</span>
+					<?php printf(get_search_query())?>
 				</h1>
 			</header><!-- .page-header -->
 
@@ -34,7 +37,7 @@ get_header();
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'search' );
+				get_template_part( 'template-parts/content', zuari_post_type_discovery() );
 
 			endwhile;
 
