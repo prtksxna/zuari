@@ -236,6 +236,49 @@ nav .children {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+/* Comment form */
+.comment-form .comment-notes {
+  display: none;
+}
+
+.comment-form label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  display: block;
+}
+
+.comment-form input,
+.comment-form textarea {
+  box-sizing: border-box;
+  width: 40rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  border: 1px solid var(--fg-color);
+  color: var(--fg-color);
+  background-color: transparent;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  background: rgba( 255, 255, 255, 0.2);
+  outline: none;
+}
+
+
+.comment-form input[type="submit"] {
+  border: none;
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.comment-form .required {
+  display: none;
+}
+
 /* Footer */
 .site-footer {
   background: rgba( 255, 255, 255, 0.4 );
