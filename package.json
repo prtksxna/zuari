@@ -1,0 +1,21 @@
+{
+  "name": "zuari",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prtksxna/zuari.git"
+  },
+  "author": "prtksxna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prtksxna/zuari/issues"
+  },
+  "homepage": "https://github.com/prtksxna/zuari#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-sass": "^1.0.0"
+  }
+}

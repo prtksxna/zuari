@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
 Theme Name: zuari
 Theme URI: https://github.com/prtksxna/zuari
@@ -16,11 +15,14 @@ This theme, like WordPress, is licensed under the GPL.
 zuari is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
+
 /* Colors */
 :root {
   --bg-color: #ee8a79;
   /* --bg-color: #9ACAC1; */
-  --fg-color: #000000; }
+  --fg-color: #000000;
+}
+
 
 /* Type */
 *,
@@ -29,23 +31,28 @@ html {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  line-height: 27px; }
+  line-height: 27px;
+}
 
 body {
   font-family: 'IBM Plex Serif', serif;
   background: var(--bg-color);
-  color: var(--fg-color); }
+  color: var(--fg-color);
+}
 
 h2, h3, h4, h5, h6 {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  font-kerning: normal; }
+  font-kerning: normal;
+}
 
 a {
-  color: var(--fg-color); }
+  color: var(--fg-color);
+}
 
 h1 a,
 h2 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 blockquote,
 blockquote p {
@@ -53,14 +60,17 @@ blockquote p {
   font-size: 0.9rem;
   line-height: 1.5rem;
   font-style: italic;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 .archive-header {
   margin-left: 20rem;
-  width: 40rem; }
+  width: 40rem;
+}
 
 .archive-header__title {
-  font-family: 'IBM Plex Sans', sans-serif; }
+  font-family: 'IBM Plex Sans', sans-serif;
+}
 
 .archive-header__title__type {
   font-size: 1.2rem;
@@ -68,53 +78,62 @@ blockquote p {
   text-transform: lowercase;
   font-variant: small-caps;
   font-weight: 400;
-  margin-bottom: -0.5rem; }
+  margin-bottom: -0.5rem;
+}
 
 .content-404 {
   margin-left: 20rem;
   width: 40rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+}
 
 .content-404 h2 {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 #page {
   /*max-width: 600px;
-	margin-left: 15rem;*/ }
+	margin-left: 15rem;*/
+}
 
 /* Header */
 .site-header {
-  margin-left: 20rem; }
+  margin-left: 20rem;
+}
 
 .site-header .site-title {
   font-family: 'IBM Plex Mono', monospace;
   font-kerning: normal;
-  letter-spacing: -0.5px;
+	letter-spacing: -0.5px;
   line-height: 1;
   font-size: 3rem;
   margin-top: 12.5rem;
-  margin-bottom: 0.15rem; }
+  margin-bottom: 0.15rem;
+}
 
 .site-description {
-  font-style: italic; }
+  font-style: italic;
+}
 
 .top-bar {
   margin-top: 4rem;
   margin-bottom: 6rem;
-  margin-left: 20rem; }
+  margin-left: 20rem;
+}
 
 .top-bar .site-title {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
-.top-bar .nav-menu {
-  font-weight: normal !important; }
+.top-bar .nav-menu{
+  font-weight: normal !important;
+}
 
 /* Navigation */
 .menu-toggle {
-  display: none;
-  /* TODO: Add support for this */ }
-
+  display: none; /* TODO: Add support for this */
+}
 .nav-menu {
   list-style: none;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -122,93 +141,113 @@ blockquote p {
   text-transform: uppercase;
   font-variant: small-caps;
   letter-spacing: 1px;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+}
 
 .nav-menu li {
   display: inline;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+}
 
 .nav-menu li a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 nav .children {
-  display: none;
-  /* TODO:Add support for this */ }
+  display: none; /* TODO:Add support for this */
+}
 
 .post-navigation,
 .posts-navigation {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba( 255, 255, 255, 0.4 );
   padding-left: 19rem;
-  font-family: 'IBM Plex Sans', sans-serif; }
+  font-family: 'IBM Plex Sans', sans-serif;
+}
 
 .nav-links {
-  width: 40rem; }
+  width: 40rem;
+}
 
 .nav-previous,
 .nav-next {
   width: 50%;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .nav-next {
-  text-align: right; }
+  text-align: right;
+}
 
 .nav-previous a,
 .nav-next a {
   display: block;
   padding: 2rem;
   text-decoration: none;
-  transition: all 333ms ease; }
+  transition: all 333ms ease;
+}
 
 .nav-previous a:hover,
 .nav-next a:hover {
-  padding: 2rem 1rem; }
+  padding: 2rem 1rem;
+}
 
 .nav-previous a:before {
-  content: '← '; }
+  content: '← ';
+}
 
 .nav-next a:after {
-  content: ' →'; }
+  content: ' →';
+}
 
 /* Comments */
 .comments-area {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba( 255, 255, 255, 0.2 );
   padding: 5rem 0 5rem 20rem;
   margin-top: 5rem;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+}
 
 .comment-list {
-  width: 40rem; }
+  width: 40rem;
+}
 
 .comment-list li {
   list-style: none;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 
 .comment-author img,
 .comment-list .reply,
 .comment-list .says {
-  display: none; }
+  display: none;
+}
 
 .comment-author,
 .comment-author a {
   font-weight: normal;
   text-decoration: none;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .comment-metadata {
-  display: none; }
+  display: none;
+}
 
 .comment-content {
-  font-family: 'IBM Plex Sans', sans-serif; }
+  font-family: 'IBM Plex Sans', sans-serif;
+}
 
 /* Comment form */
 .comment-form .comment-notes {
-  display: none; }
+  display: none;
+}
 
 .comment-form label {
   font-family: 'IBM Plex Sans', sans-serif;
   font-variant: small-caps;
   text-transform: lowercase;
-  display: block; }
+  display: block;
+}
 
 .comment-form input,
 .comment-form textarea {
@@ -219,29 +258,35 @@ nav .children {
   border-radius: 0;
   border: 1px solid var(--fg-color);
   color: var(--fg-color);
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 .comment-form input:focus,
 .comment-form textarea:focus {
-  background: rgba(255, 255, 255, 0.2);
-  outline: none; }
+  background: rgba( 255, 255, 255, 0.2);
+  outline: none;
+}
+
 
 .comment-form input[type="submit"] {
   border: none;
   color: var(--bg-color);
   background-color: var(--fg-color);
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .comment-form .required {
-  display: none; }
+  display: none;
+}
 
 /* Footer */
 .site-footer {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba( 255, 255, 255, 0.4 );
   font-family: 'IBM Plex Sans', sans-serif;
   padding: 2rem 0 2rem 20rem;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+}
 
 /* Post & Meta */
 article.page,
@@ -249,7 +294,8 @@ article.post {
   display: flex;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-image: url("baseline.png"); }
+  background-image: url('baseline.png');
+}
 
 .entry-meta {
   margin-top: 1.7rem;
@@ -257,16 +303,20 @@ article.post {
   line-height: 1.2;
   text-align: right;
   width: 19rem;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+}
 
 .entry-meta a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .entry-meta span {
-  display: block; }
+  display: block;
+}
 
 .entry {
-  width: 40rem; }
+  width: 40rem;
+}
 
 .entry-header .entry-title a {
   font-size: 2rem;
@@ -275,7 +325,8 @@ article.post {
   /* letter-spacing: -1px; */
   /* font-size: 4rem; */
   /* margin-top: 1.5rem; */
-  /* margin-bottom: -0.3rem; */ }
+  /* margin-bottom: -0.3rem; */
+}
 
 .entry-header h1 {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -285,60 +336,66 @@ article.post {
   font-size: 3rem;
   letter-spacing: -1px;
   line-height: 1.1;
-  color: red; }
+  color: red;
+}
 
 .entry-title.type-status {
-  width: 40rem; }
+  width: 40rem;
+}
 
 .entry-content p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+}
 
 /* Post format */
 .type-status {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 100;
-  font-size: 3rem; }
+  font-size: 3rem;
+}
 
 .type-aside {
-  font-family: 'IBM Plex Sans', sans-serif; }
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
 
 /* Accessibility */
 .screen-reader-text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-  word-wrap: normal !important;
-  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
 
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  clip-path: none;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-  /* Above WP toolbar. */ }
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
 
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
-  outline: 0; }
-
-/*# sourceMappingURL=style.css.map */
+	outline: 0;
+}
