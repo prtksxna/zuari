@@ -1,0 +1,67 @@
+.menu-toggle {
+  display: none; /* TODO: Add support for this */
+}
+.nav-menu {
+  list-style: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.nav-menu li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+}
+
+nav .children {
+  display: none; /* TODO:Add support for this */
+}
+
+.post-navigation,
+.posts-navigation {
+  background: rgba( 255, 255, 255, 0.4 );
+  padding-left: 19rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.nav-links {
+  width: 40rem;
+}
+
+.nav-previous,
+.nav-next {
+  width: 50%;
+  display: inline-block;
+}
+
+.nav-next {
+  text-align: right;
+}
+
+.nav-previous a,
+.nav-next a {
+  display: block;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 333ms ease;
+}
+
+.nav-previous a:hover,
+.nav-next a:hover {
+  padding: 2rem 1rem;
+}
+
+.nav-previous a:before {
+  content: '← ';
+}
+
+.nav-next a:after {
+  content: ' →';
+}

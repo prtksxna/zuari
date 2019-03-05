@@ -18,11 +18,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 /* Colors */
 :root {
-  --bg-color: #ee8a79;
-  /* --bg-color: #9ACAC1; */
+  --bg-color: #eaecf0;
   --fg-color: #000000; }
 
-/* Type */
 *,
 body,
 html {
@@ -78,39 +76,6 @@ blockquote p {
 .content-404 h2 {
   margin-top: 2rem; }
 
-#page {
-  /*max-width: 600px;
-	margin-left: 15rem;*/ }
-
-/* Header */
-.site-header {
-  margin-left: 20rem; }
-
-.site-header .site-title {
-  font-family: 'IBM Plex Mono', monospace;
-  font-kerning: normal;
-  letter-spacing: -0.5px;
-  line-height: 1;
-  font-size: 3rem;
-  margin-top: 12.5rem;
-  margin-bottom: 0.15rem; }
-
-.site-description {
-  font-style: italic; }
-
-.top-bar {
-  margin-top: 4rem;
-  margin-bottom: 6rem;
-  margin-left: 20rem; }
-
-.top-bar .site-title {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1rem; }
-
-.top-bar .nav-menu {
-  font-weight: normal !important; }
-
-/* Navigation */
 .menu-toggle {
   display: none;
   /* TODO: Add support for this */ }
@@ -168,6 +133,33 @@ nav .children {
 
 .nav-next a:after {
   content: ' →'; }
+
+.site-header {
+  margin-left: 20rem; }
+
+.site-header .site-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-kerning: normal;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  font-size: 3rem;
+  margin-top: 12.5rem;
+  margin-bottom: 0.15rem; }
+
+.site-description {
+  font-style: italic; }
+
+.top-bar {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  margin-left: 20rem; }
+
+.top-bar .site-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem; }
+
+.top-bar .nav-menu {
+  font-weight: normal !important; }
 
 .comments-area {
   background: rgba(255, 255, 255, 0.2);
@@ -235,14 +227,12 @@ nav .children {
 .comment-form .required {
   display: none; }
 
-/* Footer */
 .site-footer {
   background: rgba(255, 255, 255, 0.4);
   font-family: 'IBM Plex Sans', sans-serif;
   padding: 2rem 0 2rem 20rem;
   font-size: 0.8rem; }
 
-/* Post & Meta */
 article.page,
 article.post {
   display: flex;
@@ -301,7 +291,6 @@ article.post {
 .type-aside {
   font-family: 'IBM Plex Sans', sans-serif; }
 
-/* Accessibility */
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);

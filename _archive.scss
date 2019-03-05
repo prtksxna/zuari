@@ -1,0 +1,27 @@
+.archive-header {
+  margin-left: 20rem;
+  width: 40rem;
+}
+
+.archive-header__title {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.archive-header__title__type {
+  font-size: 1.2rem;
+  display: block;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: 400;
+  margin-bottom: -0.5rem;
+}
+
+.content-404 {
+  margin-left: 20rem;
+  width: 40rem;
+  margin-bottom: 5rem;
+}
+
+.content-404 h2 {
+  margin-top: 2rem;
+}

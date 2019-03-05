@@ -1,0 +1,37 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+body {
+  font-family: 'IBM Plex Serif', serif;
+  background: var(--bg-color);
+  color: var(--fg-color);
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-kerning: normal;
+}
+
+a {
+  color: var(--fg-color);
+}
+
+h1 a,
+h2 a {
+  text-decoration: none;
+}
+
+blockquote,
+blockquote p {
+  margin: 0 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+}

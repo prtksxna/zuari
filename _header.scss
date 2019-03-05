@@ -1,0 +1,32 @@
+.site-header {
+  margin-left: 20rem;
+}
+
+.site-header .site-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-kerning: normal;
+	letter-spacing: -0.5px;
+  line-height: 1;
+  font-size: 3rem;
+  margin-top: 12.5rem;
+  margin-bottom: 0.15rem;
+}
+
+.site-description {
+  font-style: italic;
+}
+
+.top-bar {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  margin-left: 20rem;
+}
+
+.top-bar .site-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.top-bar .nav-menu{
+  font-weight: normal !important;
+}
