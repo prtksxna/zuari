@@ -1,0 +1,79 @@
+.comments-area {
+  background: rgba( 255, 255, 255, 0.2 );
+  padding: 5rem 0 5rem 20rem;
+  margin-top: 5rem;
+  font-size: 0.9rem;
+}
+
+.comment-list {
+  width: 40rem;
+}
+
+.comment-list li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.comment-author img,
+.comment-list .reply,
+.comment-list .says {
+  display: none;
+}
+
+.comment-author,
+.comment-author a {
+  font-weight: normal;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.comment-metadata {
+  display: none;
+}
+
+.comment-content {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Form */
+.comment-form .comment-notes {
+  display: none;
+}
+
+.comment-form label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  display: block;
+}
+
+.comment-form input,
+.comment-form textarea {
+  box-sizing: border-box;
+  width: 40rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  border: 1px solid var(--fg-color);
+  color: var(--fg-color);
+  background-color: transparent;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  background: rgba( 255, 255, 255, 0.2);
+  outline: none;
+}
+
+
+.comment-form input[type="submit"] {
+  border: none;
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.comment-form .required {
+  display: none;
+}

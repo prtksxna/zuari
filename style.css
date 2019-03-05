@@ -169,7 +169,6 @@ nav .children {
 .nav-next a:after {
   content: ' →'; }
 
-/* Comments */
 .comments-area {
   background: rgba(255, 255, 255, 0.2);
   padding: 5rem 0 5rem 20rem;
@@ -200,7 +199,7 @@ nav .children {
 .comment-content {
   font-family: 'IBM Plex Sans', sans-serif; }
 
-/* Comment form */
+/* Form */
 .comment-form .comment-notes {
   display: none; }
 
