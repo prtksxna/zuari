@@ -30,11 +30,11 @@ body,
 html {
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 body {
-  font-size: 18px;
-  line-height: 1.5;
   font-family: 'IBM Plex Serif', serif;
   background: var(--bg-color);
   color: var(--fg-color);
@@ -54,10 +54,11 @@ h2 a {
   text-decoration: none;
 }
 
-blockquote {
-  margin: 0 2.5rem;
-  font-size: 1rem;
-  line-height: 1.4;
+blockquote,
+blockquote p {
+  margin: 0 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
   font-style: italic;
   font-weight: 300;
 }
@@ -291,9 +292,9 @@ nav .children {
 article.page,
 article.post {
   display: flex;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  /* background-image: url('baseline.png'); */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-image: url('baseline.png');
 }
 
 .entry-meta {
@@ -317,11 +318,14 @@ article.post {
   width: 40rem;
 }
 
-.entry-header h2 {
-  margin-top: 1.1rem;
-  margin-bottom: -0.3rem;
+.entry-header .entry-title a {
   font-size: 2rem;
-  font-kerning: normal;
+  line-height: 3rem;
+  /* line-height: 1; */
+  /* letter-spacing: -1px; */
+  /* font-size: 4rem; */
+  /* margin-top: 1.5rem; */
+  /* margin-bottom: -0.3rem; */
 }
 
 .entry-header h1 {
@@ -332,6 +336,7 @@ article.post {
   font-size: 3rem;
   letter-spacing: -1px;
   line-height: 1.1;
+  color: red;
 }
 
 .entry-title.type-status {
@@ -339,7 +344,7 @@ article.post {
 }
 
 .entry-content p {
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Post format */
