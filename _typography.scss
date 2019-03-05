@@ -8,13 +8,13 @@ html {
 }
 
 body {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: var(--body-font);
   background: var(--bg-color);
   color: var(--fg-color);
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: var(--heading-font);
   font-kerning: normal;
 }
 

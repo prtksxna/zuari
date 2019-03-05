@@ -16,10 +16,21 @@ This theme, like WordPress, is licensed under the GPL.
 zuari is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
-/* Colors */
 :root {
   --bg-color: #eaecf0;
-  --fg-color: #000000; }
+  --fg-color: #000000;
+  --body-font: 'IBM Plex Serif', serif;
+  --body-alt-font: 'IBM Plex Sans', sans-serif;
+  --heading-font: 'IBM Plex Sans Condensed', sans-serif;
+  --mono-font: 'IBM Plex Mono', monospace; }
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px; }
 
 *,
 body,
@@ -30,12 +41,12 @@ html {
   line-height: 27px; }
 
 body {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: var(--body-font);
   background: var(--bg-color);
   color: var(--fg-color); }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: var(--heading-font);
   font-kerning: normal; }
 
 a {
@@ -58,7 +69,7 @@ blockquote p {
   width: 40rem; }
 
 .archive-header__title {
-  font-family: 'IBM Plex Sans', sans-serif; }
+  font-family: var(--body-alt-font); }
 
 .archive-header__title__type {
   font-size: 1.2rem;
@@ -82,7 +93,7 @@ blockquote p {
 
 .nav-menu {
   list-style: none;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
   font-weight: 700;
   text-transform: uppercase;
   font-variant: small-caps;
@@ -104,7 +115,7 @@ nav .children {
 .posts-navigation {
   background: rgba(255, 255, 255, 0.4);
   padding-left: 19rem;
-  font-family: 'IBM Plex Sans', sans-serif; }
+  font-family: var(--body-alt-font); }
 
 .nav-links {
   width: 40rem; }
@@ -138,7 +149,7 @@ nav .children {
   margin-left: 20rem; }
 
 .site-header .site-title {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--mono-font);
   font-kerning: normal;
   letter-spacing: -0.5px;
   line-height: 1;
@@ -155,7 +166,7 @@ nav .children {
   margin-left: 20rem; }
 
 .top-bar .site-title {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
   font-size: 1rem; }
 
 .top-bar .nav-menu {
@@ -189,14 +200,14 @@ nav .children {
   display: none; }
 
 .comment-content {
-  font-family: 'IBM Plex Sans', sans-serif; }
+  font-family: var(--body-alt-font); }
 
 /* Form */
 .comment-form .comment-notes {
   display: none; }
 
 .comment-form label {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
   font-variant: small-caps;
   text-transform: lowercase;
   display: block; }
@@ -229,7 +240,7 @@ nav .children {
 
 .site-footer {
   background: rgba(255, 255, 255, 0.4);
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
   padding: 2rem 0 2rem 20rem;
   font-size: 0.8rem; }
 
@@ -267,7 +278,7 @@ article.post {
   /* margin-bottom: -0.3rem; */ }
 
 .entry-header h1 {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: var(--heading-font);
   font-kerning: normal;
   margin-top: 1.1rem;
   margin-bottom: -0.3rem;
@@ -284,12 +295,12 @@ article.post {
 
 /* Post format */
 .type-status {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
   font-weight: 100;
   font-size: 3rem; }
 
 .type-aside {
-  font-family: 'IBM Plex Sans', sans-serif; }
+  font-family: var(--body-alt-font); }
 
 .screen-reader-text {
   border: 0;

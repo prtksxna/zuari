@@ -3,7 +3,7 @@
 }
 
 .site-header .site-title {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: var(--mono-font);
   font-kerning: normal;
 	letter-spacing: -0.5px;
   line-height: 1;
@@ -23,7 +23,7 @@
 }
 
 .top-bar .site-title {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
   font-size: 1rem;
 }
 

@@ -32,7 +32,7 @@
 }
 
 .comment-content {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
 }
 
 /* Form */
@@ -41,7 +41,7 @@
 }
 
 .comment-form label {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
   font-variant: small-caps;
   text-transform: lowercase;
   display: block;

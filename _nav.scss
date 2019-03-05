@@ -3,7 +3,7 @@
 }
 .nav-menu {
   list-style: none;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
   font-weight: 700;
   text-transform: uppercase;
   font-variant: small-caps;
@@ -28,7 +28,7 @@ nav .children {
 .posts-navigation {
   background: rgba( 255, 255, 255, 0.4 );
   padding-left: 19rem;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--body-alt-font);
 }
 
 .nav-links {
