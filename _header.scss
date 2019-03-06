@@ -1,8 +1,8 @@
-.site-header {
-  margin-left: 20rem;
+.header {
+  margin-left: 20rem; // TODO this is a layout thing
 }
 
-.site-header .site-title {
+.header__title {
   font-family: var(--mono-font);
   font-kerning: normal;
 	letter-spacing: -0.5px;
@@ -12,21 +12,28 @@
   margin-bottom: 0.15rem;
 }
 
-.site-description {
+.header__description {
   font-style: italic;
 }
 
-.top-bar {
+.header__text {
+  margin: 0.75rem 0;
+}
+
+// header_type_bar is the smaller header that
+// is used on inner pages
+.header_type_bar {
   margin-top: 4rem;
   margin-bottom: 6rem;
   margin-left: 20rem;
 }
 
-.top-bar .site-title {
+.header_type_bar__title {
   font-family: var(--body-alt-font);
   font-size: 1rem;
 }
 
-.top-bar .nav-menu{
-  font-weight: normal !important;
+.header_type_bar__description {
+  font-weight: normal;
+  font-style: italic;
 }

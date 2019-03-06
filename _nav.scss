@@ -1,7 +1,5 @@
-.menu-toggle {
-  display: none; /* TODO: Add support for this */
-}
-.nav-menu {
+// Top navigation
+.top-navigation {
   list-style: none;
   font-family: var(--body-alt-font);
   font-weight: 700;
@@ -9,21 +7,22 @@
   font-variant: small-caps;
   letter-spacing: 1px;
   font-size: 0.9rem;
+
+  li {
+    display: inline;
+    margin-right: 1rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
-.nav-menu li {
-  display: inline;
-  margin-right: 1rem;
+.top-navigation_type_bar {
+  font-weight: normal;
 }
 
-.nav-menu li a {
-  text-decoration: none;
-}
-
-nav .children {
-  display: none; /* TODO:Add support for this */
-}
-
+// Post navigation
 .post-navigation,
 .posts-navigation {
   background: rgba( 255, 255, 255, 0.4 );

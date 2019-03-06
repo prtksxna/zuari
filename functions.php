@@ -131,8 +131,6 @@ add_action( 'widgets_init', 'zuari_widgets_init' );
 function zuari_scripts() {
 	wp_enqueue_style( 'zuari-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'zuari-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'zuari-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

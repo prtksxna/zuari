@@ -26,48 +26,48 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'zuari' ); ?></a>
 
 	<?php if ( is_front_page() && is_home() ) { ?>
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+	<header class="header">
+		<div class="header__branding">
 			<?php the_custom_logo(); ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div>
 		<?php $zuari_description = get_bloginfo( 'description', 'display' );
 		if ( $zuari_description || is_customize_preview() ) :
 			?>
-			<p class="site-description"><?php echo $zuari_description; /* WPCS: xss ok. */ ?></p>
+			<p class="header__description"><?php echo $zuari_description; /* WPCS: xss ok. */ ?></p>
 		<?php endif; ?>
 		<?php if ( is_active_sidebar( 'sidebar-intro' ) ) { ?>
-			<div class="widget-area">
+			<div class="header__text">
 				<?php dynamic_sidebar( 'sidebar-intro' ); ?>
 			</div><!-- #secondary -->
 		<?php } ?>
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'zuari' ); ?></button>
+		<nav>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'header-menu',
 				'menu_id'        => 'primary-menu',
+				'menu_class'     => 'top-navigation',
 			) );
 			?>
 		</nav><!-- #site-navigation -->
 	</header>
 	<?php } else { ?>
-		<header class="top-bar">
+		<header class="header_type_bar">
 			<?php the_custom_logo(); ?>
-			<h1 class="site-title">
+			<h1 class="header_type_bar__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				<?php $zuari_description = get_bloginfo( 'description', 'display' );
 				if ( $zuari_description || is_customize_preview() ) :
 					?>
-					<span class="site-description">&mdash; <?php echo $zuari_description; /* WPCS: xss ok. */ ?></span>
+					<span class="header_type_bar__description">&mdash; <?php echo $zuari_description; /* WPCS: xss ok. */ ?></span>
 				<?php endif; ?>
 			</h1>
-			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'zuari' ); ?></button>
+			<nav>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'header-menu',
 					'menu_id'        => 'primary-menu',
+					'menu_class'     => 'top-navigation top-navigation_type_bar',
 				) );
 				?>
 			</nav><!-- #site-navigation -->

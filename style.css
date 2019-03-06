@@ -32,14 +32,6 @@ html {
   font-size: 18px;
   line-height: 27px; }
 
-*,
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 27px; }
-
 body {
   font-family: var(--body-font);
   background: var(--bg-color);
@@ -87,11 +79,7 @@ blockquote p {
 .content-404 h2 {
   margin-top: 2rem; }
 
-.menu-toggle {
-  display: none;
-  /* TODO: Add support for this */ }
-
-.nav-menu {
+.top-navigation {
   list-style: none;
   font-family: var(--body-alt-font);
   font-weight: 700;
@@ -99,17 +87,14 @@ blockquote p {
   font-variant: small-caps;
   letter-spacing: 1px;
   font-size: 0.9rem; }
+  .top-navigation li {
+    display: inline;
+    margin-right: 1rem; }
+    .top-navigation li a {
+      text-decoration: none; }
 
-.nav-menu li {
-  display: inline;
-  margin-right: 1rem; }
-
-.nav-menu li a {
-  text-decoration: none; }
-
-nav .children {
-  display: none;
-  /* TODO:Add support for this */ }
+.top-navigation_type_bar {
+  font-weight: normal; }
 
 .post-navigation,
 .posts-navigation {
@@ -145,10 +130,10 @@ nav .children {
 .nav-next a:after {
   content: ' →'; }
 
-.site-header {
+.header {
   margin-left: 20rem; }
 
-.site-header .site-title {
+.header__title {
   font-family: var(--mono-font);
   font-kerning: normal;
   letter-spacing: -0.5px;
@@ -157,20 +142,24 @@ nav .children {
   margin-top: 12.5rem;
   margin-bottom: 0.15rem; }
 
-.site-description {
+.header__description {
   font-style: italic; }
 
-.top-bar {
+.header__text {
+  margin: 0.75rem 0; }
+
+.header_type_bar {
   margin-top: 4rem;
   margin-bottom: 6rem;
   margin-left: 20rem; }
 
-.top-bar .site-title {
+.header_type_bar__title {
   font-family: var(--body-alt-font);
   font-size: 1rem; }
 
-.top-bar .nav-menu {
-  font-weight: normal !important; }
+.header_type_bar__description {
+  font-weight: normal;
+  font-style: italic; }
 
 .comments-area {
   background: rgba(255, 255, 255, 0.2);
