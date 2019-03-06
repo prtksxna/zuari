@@ -25,13 +25,12 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   --mono-font: 'IBM Plex Mono', monospace;
 }
 
-*,
 body,
 html {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 1.5rem;
 }
 
 @import 'typography';
