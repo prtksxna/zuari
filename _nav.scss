@@ -28,39 +28,37 @@
   background: rgba( 255, 255, 255, 0.4 );
   padding-left: 19rem;
   font-family: var(--body-alt-font);
-}
 
-.nav-links {
-  width: 40rem;
-}
+  .nav-links {
+    width: 40rem;
+  }
 
-.nav-previous,
-.nav-next {
-  width: 50%;
-  display: inline-block;
-}
+  .nav-previous,
+  .nav-next {
+    width: 50%;
+    display: inline-block;
 
-.nav-next {
-  text-align: right;
-}
+    a {
+      display: block;
+      padding: 2rem;
+      text-decoration: none;
+      transition: all 333ms ease;
 
-.nav-previous a,
-.nav-next a {
-  display: block;
-  padding: 2rem;
-  text-decoration: none;
-  transition: all 333ms ease;
-}
+      &:hover {
+        padding: 2rem 1rem;
+      }
+    }
+  }
 
-.nav-previous a:hover,
-.nav-next a:hover {
-  padding: 2rem 1rem;
-}
+  .nav-next {
+    text-align: right;
 
-.nav-previous a:before {
-  content: '← ';
-}
+    a:after {
+      content: ' →';
+    }
+  }
 
-.nav-next a:after {
-  content: ' →';
+  .nav-previous a:before {
+    content: '← ';
+  }
 }
