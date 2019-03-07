@@ -19,6 +19,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 :root {
   --bg-color: #eaecf0;
   --fg-color: #000000;
+  --fade1-color: rgba( 255, 255, 255, 0.2 );
+  --fade2-color: rgba( 255, 255, 255, 0.4 );
   --body-font: 'IBM Plex Serif', serif;
   --body-alt-font: 'IBM Plex Sans', sans-serif;
   --heading-font: 'IBM Plex Sans Condensed', sans-serif;

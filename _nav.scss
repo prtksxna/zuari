@@ -27,7 +27,7 @@
 // Post navigation
 .post-navigation,
 .posts-navigation {
-  background: rgba( 255, 255, 255, 0.4 );
+  background: var(--fade2-color);
   font-family: var(--body-alt-font);
 
   .nav-links {
