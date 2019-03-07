@@ -28,11 +28,10 @@
 .post-navigation,
 .posts-navigation {
   background: rgba( 255, 255, 255, 0.4 );
-  padding-left: 19rem;
   font-family: var(--body-alt-font);
 
   .nav-links {
-    width: 40rem;
+    @extend %col;
   }
 
   .nav-previous,

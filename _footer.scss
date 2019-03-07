@@ -1,7 +1,12 @@
 .footer {
+  padding: 1rem;
+  margin: 0;
   background: rgba( 255, 255, 255, 0.4 );
   font-family: var(--body-alt-font);
-  padding: 2rem 0 2rem 20rem;
   font-size: 0.8rem;
   line-height: 1.5rem;
+}
+
+.footer__content {
+  @extend %col;
 }

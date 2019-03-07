@@ -1,5 +1,5 @@
 .header {
-  margin-left: 20rem; // TODO this is a layout thing
+  @extend %col;
 }
 
 .header__title {
@@ -23,9 +23,9 @@
 // header_type_bar is the smaller header that
 // is used on inner pages
 .header_type_bar {
+  @extend %col;
   margin-top: 4rem;
   margin-bottom: 6rem;
-  margin-left: 20rem;
 }
 
 .header_type_bar__title {

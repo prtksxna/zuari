@@ -33,6 +33,11 @@ html {
   line-height: 1.5rem;
 }
 
+%col {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
 @import 'typography';
 @import 'archive';
 @import 'nav';

@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="footer">
 		<?php if ( is_active_sidebar( 'sidebar-footer' ) ) { ?>
-			<div class="widget-area">
+			<div class="footer__content">
 				<?php dynamic_sidebar( 'sidebar-footer' ); ?>
 			</div><!-- #secondary -->
 		<?php } ?>

@@ -1,18 +1,19 @@
 article.page,
 article.post {
-  display: flex;
+  @extend %col;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-image: url('baseline.png');
+  //background-image: url('baseline.png');
 }
 
 .entry-meta {
-  margin-top: 1.7rem;
   font-size: 0.75rem;
   line-height: 1.2;
   text-align: right;
-  width: 19rem;
-  padding-right: 1rem;
+
+  width: 10rem;
+  margin-left: -11rem;
+  float: left;
 }
 
 .entry-meta a {
@@ -24,7 +25,7 @@ article.post {
 }
 
 .entry {
-  width: 40rem;
+
 }
 
 .entry-header .entry-title a {
@@ -46,10 +47,6 @@ article.post {
   letter-spacing: -1px;
   line-height: 1.1;
   color: red;
-}
-
-.entry-title.type-status {
-  width: 40rem;
 }
 
 .entry-content p {

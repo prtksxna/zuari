@@ -1,6 +1,5 @@
 .archive-header {
-  margin-left: 20rem;
-  width: 40rem;
+  @extend %col;
 }
 
 .archive-header__title {
@@ -17,8 +16,7 @@
 }
 
 .content-404 {
-  margin-left: 20rem;
-  width: 40rem;
+  @extend %col;
   margin-bottom: 5rem;
 }
 

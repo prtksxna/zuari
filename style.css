@@ -31,6 +31,12 @@ html {
   font-size: 18px;
   line-height: 1.5rem; }
 
+.archive-header, .content-404, .post-navigation .nav-links,
+.posts-navigation .nav-links, .header, .header_type_bar, .comment-list, .comment-respond, .footer__content, article.page,
+article.post {
+  max-width: 35rem;
+  margin: 0 auto; }
+
 body {
   font-family: var(--body-font);
   background: var(--bg-color);
@@ -55,10 +61,6 @@ blockquote p {
   font-style: italic;
   font-weight: 300; }
 
-.archive-header {
-  margin-left: 20rem;
-  width: 40rem; }
-
 .archive-header__title {
   font-family: var(--body-alt-font); }
 
@@ -71,8 +73,6 @@ blockquote p {
   margin-bottom: -0.5rem; }
 
 .content-404 {
-  margin-left: 20rem;
-  width: 40rem;
   margin-bottom: 5rem; }
 
 .content-404 h2 {
@@ -100,11 +100,7 @@ blockquote p {
 .post-navigation,
 .posts-navigation {
   background: rgba(255, 255, 255, 0.4);
-  padding-left: 19rem;
   font-family: var(--body-alt-font); }
-  .post-navigation .nav-links,
-  .posts-navigation .nav-links {
-    width: 40rem; }
   .post-navigation .nav-previous,
   .post-navigation .nav-next,
   .posts-navigation .nav-previous,
@@ -134,9 +130,6 @@ blockquote p {
   .posts-navigation .nav-previous a:before {
     content: '← '; }
 
-.header {
-  margin-left: 20rem; }
-
 .header__title {
   font-family: var(--mono-font);
   font-kerning: normal;
@@ -154,8 +147,7 @@ blockquote p {
 
 .header_type_bar {
   margin-top: 4rem;
-  margin-bottom: 6rem;
-  margin-left: 20rem; }
+  margin-bottom: 6rem; }
 
 .header_type_bar__title {
   font-family: var(--body-alt-font);
@@ -167,12 +159,9 @@ blockquote p {
 
 .comments-area {
   background: rgba(255, 255, 255, 0.2);
-  padding: 5rem 0 5rem 20rem;
+  padding: 5rem 0;
   margin-top: 5rem;
   font-size: 0.9rem; }
-
-.comment-list {
-  width: 40rem; }
 
 .comment-list li {
   list-style: none;
@@ -208,7 +197,7 @@ blockquote p {
 .comment-form input,
 .comment-form textarea {
   box-sizing: border-box;
-  width: 40rem;
+  width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 0;
@@ -232,35 +221,31 @@ blockquote p {
   display: none; }
 
 .footer {
+  padding: 1rem;
+  margin: 0;
   background: rgba(255, 255, 255, 0.4);
   font-family: var(--body-alt-font);
-  padding: 2rem 0 2rem 20rem;
   font-size: 0.8rem;
   line-height: 1.5rem; }
 
 article.page,
 article.post {
-  display: flex;
   margin-top: 3rem;
-  margin-bottom: 3rem;
-  background-image: url("baseline.png"); }
+  margin-bottom: 3rem; }
 
 .entry-meta {
-  margin-top: 1.7rem;
   font-size: 0.75rem;
   line-height: 1.2;
   text-align: right;
-  width: 19rem;
-  padding-right: 1rem; }
+  width: 10rem;
+  margin-left: -11rem;
+  float: left; }
 
 .entry-meta a {
   text-decoration: none; }
 
 .entry-meta span {
   display: block; }
-
-.entry {
-  width: 40rem; }
 
 .entry-header .entry-title a {
   font-size: 2rem;
@@ -280,9 +265,6 @@ article.post {
   letter-spacing: -1px;
   line-height: 1.1;
   color: red; }
-
-.entry-title.type-status {
-  width: 40rem; }
 
 .entry-content p {
   margin-bottom: 1.5rem; }

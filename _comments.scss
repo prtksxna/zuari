@@ -1,12 +1,12 @@
 .comments-area {
   background: rgba( 255, 255, 255, 0.2 );
-  padding: 5rem 0 5rem 20rem;
+  padding: 5rem 0;
   margin-top: 5rem;
   font-size: 0.9rem;
 }
 
 .comment-list {
-  width: 40rem;
+  @extend %col;
 }
 
 .comment-list li {
@@ -36,6 +36,10 @@
 }
 
 /* Form */
+.comment-respond {
+  @extend %col;
+}
+
 .comment-form .comment-notes {
   display: none;
 }
@@ -50,7 +54,7 @@
 .comment-form input,
 .comment-form textarea {
   box-sizing: border-box;
-  width: 40rem;
+  width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 0;
