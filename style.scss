@@ -31,8 +31,15 @@ body,
 html {
   margin: 0;
   padding: 0;
+  font-family: var(--body-font);
   font-size: 18px;
   line-height: 1.5rem;
+  background: var(--bg-color);
+  color: var(--fg-color);
+}
+
+a {
+  color: var(--fg-color);
 }
 
 %col {
@@ -40,7 +47,15 @@ html {
   margin: 0 auto;
 }
 
-@import 'typography';
+%heading {
+  font-family: var(--heading-font);
+  font-kerning: normal;
+
+  a {
+    text-decoration: none;
+  }
+}
+
 @import 'archive';
 @import 'nav';
 @import 'header';

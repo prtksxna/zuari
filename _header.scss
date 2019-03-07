@@ -3,6 +3,7 @@
 }
 
 .header__title {
+  @extend %heading;
   font-family: var(--mono-font);
   font-kerning: normal;
 	letter-spacing: -0.5px;
@@ -29,6 +30,7 @@
 }
 
 .header_type_bar__title {
+  @extend %heading;
   font-family: var(--body-alt-font);
   font-size: 1rem;
 }
