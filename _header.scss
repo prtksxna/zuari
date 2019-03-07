@@ -5,8 +5,8 @@
 .header__title {
   @extend %heading;
   font-family: var(--mono-font);
-  font-kerning: normal;
-	letter-spacing: -0.5px;
+  font-weight: normal;
+  letter-spacing: -2px;
   line-height: 1;
   font-size: 3rem;
   margin-top: 12.5rem;
