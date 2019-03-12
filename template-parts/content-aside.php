@@ -8,16 +8,15 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-meta">
+<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
+	<div class="content__meta">
 		<?php
 		zuari_posted_on();
-		zuari_posted_by();
 		zuari_entry_footer();
 		?>
 	</div><!-- .entry-meta -->
 
-	<div class="entry-content type-aside entry">
+	<div class="content__body content__body_type_aside">
 		<?php
 		the_content( sprintf(
 			wp_kses(

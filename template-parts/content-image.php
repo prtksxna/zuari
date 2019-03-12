@@ -8,11 +8,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-meta">
+<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
+	<div class="content__meta">
 		<?php
 		zuari_posted_on();
-		zuari_posted_by();
 		zuari_entry_footer();
 		?>
 	</div><!-- .entry-meta -->
@@ -23,9 +22,9 @@
 		<header class="entry-header">
 			<?php
 			if ( is_singular() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
+				the_title( '<h1 class="content__title">', '</h1>' );
 			else :
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				the_title( '<h2 class="content__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif; ?>
 		</header><!-- .entry-header -->
 

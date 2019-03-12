@@ -8,18 +8,17 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="entry-meta">
+<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
+		<div class="content__meta">
 			<?php
 			zuari_posted_on();
-			zuari_posted_by();
 			zuari_entry_footer();
 			?>
-		</div><!-- .entry-meta -->
+		</div><!-- .content__meta -->
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title type-status">', '</h1>' );
+			the_title( '<h1 class="content__title content__title_type_status">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title type-status"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="content__title content__title_type_status"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif; ?>
-</article><!-- #post-<?php the_ID(); ?> -->
+</article><!-- .content ?> -->

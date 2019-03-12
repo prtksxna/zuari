@@ -47,7 +47,7 @@ add_action( 'wp_head', 'zuari_pingback_header' );
 function zuari_post_type_discovery() {
 	if (
 			has_post_thumbnail() &&
-			get_the_content() === ""
+			get_the_title() === ""
 	) {
 		return 'image';
 	}
