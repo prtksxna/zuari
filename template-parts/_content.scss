@@ -1,54 +1,75 @@
-article.page,
-article.post {
+.content {
   @extend %col;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   //background-image: url('baseline.png');
+
+  &:hover {
+    .content__meta {
+      opacity: 1;
+    }
+  }
 }
 
-.entry-meta {
-  font-size: 0.75rem;
-  line-height: 1.2;
-  text-align: right;
-
+.content__meta {
   width: 10rem;
+  margin-top: 0;
   margin-left: -11rem;
   float: left;
+  text-align: right;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  opacity: 0;
+  transition: 0.3s all ease;
+
+  span {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
-.entry-meta a {
-  text-decoration: none;
+.content__meta__tags a {
+  font-family: var(--body-alt-font);
+  background: var(--fade2-color);
+  font-variant: small-caps;
+  border-radius: 2px;
+  padding: 0 7px 3px 7px;
+  margin-left: 3px;
 }
 
-.entry-meta span {
-  display: block;
-}
-
-.entry {
-
-}
-
-.entry-header .entry-title {
+.content__title {
   @extend %heading;
-}
-
-.entry-header h2 {
   font-size: 2rem;
+  line-height: 3rem;
+  margin: 0;
 }
 
-.entry-header h1 {
-  margin-top: 1.1rem;
-  margin-bottom: -0.3rem;
+.content__title_type_big {
   font-size: 3rem;
+  margin: 0;
+  margin-top: 1.1rem;
+  margin-bottom: -0rem;
   letter-spacing: -1px;
-  line-height: 1.1;
+  line-height: 3rem;
 }
+
+.content__body {
+  p {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/*
+
 
 .entry-content p {
   margin-bottom: 1.5rem;
 }
 
-/* Post format */
 .type-status {
   font-family: var(--body-alt-font);
   font-weight: 100;
@@ -67,4 +88,4 @@ blockquote p {
   line-height: 1.5rem;
   font-style: italic;
   font-weight: 300;
-}
+}*/

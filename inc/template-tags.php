@@ -52,18 +52,18 @@ if ( ! function_exists( 'zuari_entry_footer' ) ) :
 		// Hide tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'zuari' ) );
+			$tags_list = get_the_tag_list( '<span class="content__meta__tags">', esc_html_x( ' ', 'list item separator', 'zuari' ), '</span>' );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
 				printf( $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
-		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		/*if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';
-			comments_popup_link();
+			comments_popup_link( '' );
 			echo '</span>';
-		}
+		}*/
 
 		edit_post_link(
 			sprintf(
