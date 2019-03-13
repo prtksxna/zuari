@@ -41,7 +41,7 @@ a {
 
 .archive-header, .content-404, .post-navigation .nav-links,
 .posts-navigation .nav-links, .header, .header_type_bar, .comment-list, .comment-respond, .footer__content, .content {
-  max-width: 35rem;
+  max-width: 640px;
   margin: 0 auto; }
 
 .header__title, .header_type_bar__title, .content__title {

@@ -19,16 +19,7 @@
 	<div class="entry">
 		<?php zuari_post_thumbnail(); ?>
 
-		<header class="entry-header">
-			<?php
-			if ( is_singular() ) :
-				the_title( '<h1 class="content__title">', '</h1>' );
-			else :
-				the_title( '<h2 class="content__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			endif; ?>
-		</header><!-- .entry-header -->
-
-		<div class="entry-content">
+		<div class="content__body content__body_type_aside">
 			<?php
 			the_content( sprintf(
 				wp_kses(
