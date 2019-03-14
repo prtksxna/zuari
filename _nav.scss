@@ -41,14 +41,20 @@
 
     a {
       display: block;
-      padding: 2rem;
+      padding: 2rem 0;
       text-decoration: none;
       transition: all 333ms ease;
-
-      &:hover {
-        padding: 2rem 1rem;
-      }
     }
+  }
+
+  .nav-next a:hover {
+    padding-left: 1rem;
+    margin-right: -1rem
+  }
+
+  .nav-previous a:hover {
+    padding-right: 1rem;
+    margin-left: -1rem;
   }
 
   .nav-next {
