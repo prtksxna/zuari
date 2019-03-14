@@ -267,9 +267,15 @@ a {
   font-size: 3rem;
   line-height: 3rem; }
 
+.content__body pre,
 .content__body p {
   margin: 0;
   margin-bottom: 1.5rem; }
+.content__body pre {
+  font-family: var(--mono-font); }
+.content__body hr {
+  border: none;
+  border-bottom: 1px solid var(--fg-color); }
 .content__body blockquote {
   margin: 0 1.5rem;
   margin-bottom: 1.5rem;

@@ -64,9 +64,19 @@
 }
 
 .content__body {
+  pre,
   p {
     margin: 0;
     margin-bottom: 1.5rem;
+  }
+
+  pre {
+    font-family: var(--mono-font);
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid var(--fg-color);
   }
 
   blockquote {
