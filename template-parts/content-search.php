@@ -9,27 +9,21 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
+	<?php the_title( sprintf( '<h2 class="content__title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-		<?php if ( 'post' === get_post_type() ) : ?> <?php // TODO: WHAT TO DO HERE? ?>
-		<div class="entry-meta">
+	<?php if ( 'post' === get_post_type() ) : ?> <?php // TODO: WHAT TO DO HERE? ?>
+		<div class="content__meta">
 			<?php
 			zuari_posted_on();
-			zuari_posted_by();
+			zuari_entry_footer();
 			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+		</div><!-- .content__meta -->
+	<?php endif; ?>
 
 	<?php zuari_post_thumbnail(); ?>
 
-	<div class="entry-summary">
+	<div class="content__body">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php zuari_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+	</div><!-- .content__body -->
+</article><!-- .content -->

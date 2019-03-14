@@ -14,7 +14,7 @@
 		zuari_posted_on();
 		zuari_entry_footer();
 		?>
-	</div><!-- .entry-meta -->
+	</div><!-- .content__meta -->
 
 	<div class="content__body content__body_type_aside">
 		<?php
@@ -36,5 +36,5 @@
 			'after'  => '</div>',
 		) );
 		?>
-	</div><!-- .entry-content -->
-</article><!-- #post-<?php the_ID(); ?> -->
+	</div><!-- .content__body -->
+</article><!-- .content -->

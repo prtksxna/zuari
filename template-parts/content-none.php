@@ -9,12 +9,10 @@
 
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'zuari' ); ?></h1>
-	</header><!-- .page-header -->
+<section class="no-results not-found content">
+	<h1 class="content__title"><?php esc_html_e( 'Nothing Found', 'zuari' ); ?></h1>
 
-	<div class="page-content">
+	<div class="content__body">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) :
 
@@ -47,5 +45,5 @@
 
 		endif;
 		?>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+	</div><!-- .content__body -->
+</section><!-- .content -->

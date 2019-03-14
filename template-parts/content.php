@@ -17,7 +17,7 @@
 		the_title( '<h2 class="content__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 	} ?>
 
-	<?php if ( 'post' === get_post_type() ) {	?> <?php // TODO: MAYBE MOVE THIS ?>
+	<?php if ( 'post' === get_post_type() ) {	?>
 		<div class="content__meta">
 			<?php
 			zuari_posted_on();
