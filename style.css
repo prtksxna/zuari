@@ -287,7 +287,8 @@ a {
   margin: 0;
   margin-bottom: 1.5rem; }
 .content__body pre {
-  font-family: var(--mono-font); }
+  font-family: var(--mono-font);
+  white-space: pre-wrap; }
 .content__body hr {
   border: none;
   border-bottom: 1px solid var(--fg-color); }
