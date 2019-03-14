@@ -1,5 +1,13 @@
 .header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__container {
   @extend %col;
+  margin-top: 10vh;
 }
 
 .header__title {
@@ -7,18 +15,24 @@
   font-family: var(--mono-font);
   font-weight: normal;
   letter-spacing: -2px;
-  line-height: 1;
   font-size: 3rem;
-  margin-top: 12.5rem;
-  margin-bottom: 0.15rem;
+  line-height: 1.5rem;
+  margin: 0;
+  //margin-bottom: 0.15rem;
 }
 
 .header__description {
   font-style: italic;
+  margin: 1.5rem 0;
 }
 
 .header__text {
-  margin: 0.75rem 0;
+  margin: 0;
+
+  p {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
 }
 
 // header_type_bar is the smaller header that

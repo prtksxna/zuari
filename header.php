@@ -27,29 +27,31 @@
 
 	<?php if ( is_front_page() && is_home() ) { ?>
 	<header class="header">
-		<div class="header__branding">
-			<?php the_custom_logo(); ?>
-			<h1 class="header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<div class="header__container">
+			<div class="header__branding">
+				<?php the_custom_logo(); ?>
+				<h1 class="header__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			</div>
+			<?php $zuari_description = get_bloginfo( 'description', 'display' );
+			if ( $zuari_description || is_customize_preview() ) :
+				?>
+				<p class="header__description"><?php echo $zuari_description; /* WPCS: xss ok. */ ?></p>
+			<?php endif; ?>
+			<?php if ( is_active_sidebar( 'sidebar-intro' ) ) { ?>
+				<div class="header__text">
+					<?php dynamic_sidebar( 'sidebar-intro' ); ?>
+				</div><!-- #secondary -->
+			<?php } ?>
+			<nav>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'header-menu',
+					'menu_id'        => 'primary-menu',
+					'menu_class'     => 'top-navigation',
+				) );
+				?>
+			</nav><!-- #site-navigation -->
 		</div>
-		<?php $zuari_description = get_bloginfo( 'description', 'display' );
-		if ( $zuari_description || is_customize_preview() ) :
-			?>
-			<p class="header__description"><?php echo $zuari_description; /* WPCS: xss ok. */ ?></p>
-		<?php endif; ?>
-		<?php if ( is_active_sidebar( 'sidebar-intro' ) ) { ?>
-			<div class="header__text">
-				<?php dynamic_sidebar( 'sidebar-intro' ); ?>
-			</div><!-- #secondary -->
-		<?php } ?>
-		<nav>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'header-menu',
-				'menu_id'        => 'primary-menu',
-				'menu_class'     => 'top-navigation',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
 	</header>
 	<?php } else { ?>
 		<header class="header_type_bar">
