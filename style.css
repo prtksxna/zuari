@@ -174,11 +174,13 @@ a {
   font-family: var(--body-alt-font); }
 
 /* Form */
+.comment-respond {
+  font-family: var(--body-alt-font); }
+
 .comment-form .comment-notes {
   display: none; }
 
 .comment-form label {
-  font-family: var(--body-alt-font);
   font-variant: small-caps;
   text-transform: lowercase;
   display: block; }
