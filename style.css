@@ -236,9 +236,15 @@ a {
 
 .content {
   margin-top: 0rem;
-  margin-bottom: 50vh; }
+  margin-bottom: 50vh;
+  padding-top: 0;
+  transition: all 1s ease; }
   .content:hover .content__meta {
     opacity: 1; }
+
+.content_type_hidden {
+  opacity: 0;
+  padding-top: 10rem; }
 
 .content__meta {
   width: 10rem;
