@@ -25,6 +25,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   --body-alt-font: 'IBM Plex Sans', sans-serif;
   --heading-font: 'IBM Plex Sans Condensed', sans-serif;
   --mono-font: 'IBM Plex Mono', monospace;
+  --content-width: 640px;
 }
 
 body,
@@ -45,8 +46,12 @@ a {
 }
 
 %col {
-  max-width: 640px;
+  max-width: var(--content-width);
   margin: 0 auto;
+
+  @media only screen and (max-width: 660px) {
+    margin: 0 20px;
+  }
 }
 
 %heading {

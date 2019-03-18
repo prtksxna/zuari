@@ -37,6 +37,10 @@
   a {
     text-decoration: none;
   }
+
+  @media only screen and (max-width: 820px) {
+    display: none;
+  }
 }
 
 .content__meta__tags a {
@@ -86,6 +90,10 @@
   hr {
     border: none;
     border-bottom: 1px solid var(--fg-color);
+  }
+
+  img {
+    max-width: 100%;
   }
 
   blockquote {
