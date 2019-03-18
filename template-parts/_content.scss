@@ -9,6 +9,7 @@
   &:hover {
     .content__meta {
       opacity: 1;
+      margin-left: -11rem;
     }
   }
 }
@@ -21,13 +22,13 @@
 .content__meta {
   width: 10rem;
   margin-top: 0;
-  margin-left: -11rem;
+  margin-left: -11.5rem;
   float: left;
   text-align: right;
   font-size: 0.75rem;
   line-height: 1.5rem;
   opacity: 0;
-  transition: 0.3s all ease;
+  transition: 0.2s all ease;
 
   span {
     display: block;
