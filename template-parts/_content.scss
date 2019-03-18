@@ -3,7 +3,7 @@
   margin-top: 0rem;
   margin-bottom: 50vh;
   padding-top: 0;
-  transition: all 1s ease;
+  transition: all var(--transition-duration) ease;
   //background-image: url('baseline.png');
 
   &:hover {
@@ -28,7 +28,7 @@
   font-size: 0.75rem;
   line-height: 1.5rem;
   opacity: 0;
-  transition: 0.2s all ease;
+  transition: all var(--transition-duration) ease;
 
   span {
     display: block;

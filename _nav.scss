@@ -43,7 +43,7 @@
       display: block;
       padding: 2rem 0;
       text-decoration: none;
-      transition: all 333ms ease;
+      transition: all var(--transition-duration) ease;
     }
   }
 

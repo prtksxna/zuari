@@ -25,7 +25,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   --body-alt-font: 'IBM Plex Sans', sans-serif;
   --heading-font: 'IBM Plex Sans Condensed', sans-serif;
   --mono-font: 'IBM Plex Mono', monospace;
-  --content-width: 640px; }
+  --content-width: 640px;
+  --transition-duration: 250ms; }
 
 body,
 html {
@@ -36,11 +37,11 @@ html {
   line-height: 1.5rem;
   background: var(--bg-color);
   color: var(--fg-color);
-  transition: all 1s ease; }
+  transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease; }
 
 a {
-  transition: all 1s ease;
-  color: var(--fg-color); }
+  color: var(--fg-color);
+  transition: color var(--transition-duration) ease; }
 
 .archive-header, .content-404, .post-navigation .nav-links,
 .posts-navigation .nav-links, .header__container, .header_type_bar, .comment-list, .comment-respond, .footer__content, .content {
@@ -110,7 +111,7 @@ a {
       display: block;
       padding: 2rem 0;
       text-decoration: none;
-      transition: all 333ms ease; }
+      transition: all var(--transition-duration) ease; }
   .post-navigation .nav-next a:hover,
   .posts-navigation .nav-next a:hover {
     padding-left: 1rem;
@@ -245,7 +246,7 @@ a {
   margin-top: 0rem;
   margin-bottom: 50vh;
   padding-top: 0;
-  transition: all 1s ease; }
+  transition: all var(--transition-duration) ease; }
   .content:hover .content__meta {
     opacity: 1;
     margin-left: -11rem; }
@@ -263,7 +264,7 @@ a {
   font-size: 0.75rem;
   line-height: 1.5rem;
   opacity: 0;
-  transition: 0.2s all ease; }
+  transition: all var(--transition-duration) ease; }
   .content__meta span {
     display: block; }
   .content__meta a {

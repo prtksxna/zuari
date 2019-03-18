@@ -26,6 +26,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   --heading-font: 'IBM Plex Sans Condensed', sans-serif;
   --mono-font: 'IBM Plex Mono', monospace;
   --content-width: 640px;
+  --transition-duration: 250ms;
 }
 
 body,
@@ -37,12 +38,13 @@ html {
   line-height: 1.5rem;
   background: var(--bg-color);
   color: var(--fg-color);
-  transition: all 1s ease;
+  transition: background-color var(--transition-duration) ease,
+    color var(--transition-duration) ease;
 }
 
 a {
-  transition: all 1s ease;
   color: var(--fg-color);
+  transition: color var(--transition-duration) ease;
 }
 
 %col {
