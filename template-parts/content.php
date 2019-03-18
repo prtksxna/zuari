@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?> <?php zuari_iro(); ?>>
 	<?php
 	if ( is_singular() ) {
 		the_title( '<h1 class="content__title content__title_type_big">', '</h1>' );

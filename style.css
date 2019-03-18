@@ -34,9 +34,11 @@ html {
   font-size: 18px;
   line-height: 1.5rem;
   background: var(--bg-color);
-  color: var(--fg-color); }
+  color: var(--fg-color);
+  transition: all 1s ease; }
 
 a {
+  transition: all 1s ease;
   color: var(--fg-color); }
 
 .archive-header, .content-404, .post-navigation .nav-links,
