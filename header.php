@@ -55,7 +55,6 @@
 	</header>
 	<?php } else { ?>
 		<header class="header_type_bar">
-			<?php the_custom_logo(); ?>
 			<h1 class="header_type_bar__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				<?php $zuari_description = get_bloginfo( 'description', 'display' );

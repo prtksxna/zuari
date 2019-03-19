@@ -59,12 +59,6 @@ if ( ! function_exists( 'zuari_setup' ) ) :
 			'caption',
 		) );
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'zuari_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
-
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -74,10 +68,10 @@ if ( ! function_exists( 'zuari_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 100,
+			'width'       => 100,
 			'flex-width'  => true,
-			'flex-height' => true,
+			'flex-height' => false,
 		) );
 	}
 endif;
