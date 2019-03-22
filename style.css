@@ -135,7 +135,9 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  background-size: cover;
+  background-position: center center; }
 
 .header__container {
   margin-top: 10vh; }

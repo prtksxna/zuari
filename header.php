@@ -26,7 +26,10 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'zuari' ); ?></a>
 
 	<?php if ( is_front_page() && is_home() ) { ?>
-	<header class="header">
+	<header
+		class="header"
+		style="background-image: url(<?php header_image() ?>)"
+	>
 		<div class="header__container">
 			<div class="header__branding">
 				<?php the_custom_logo(); ?>

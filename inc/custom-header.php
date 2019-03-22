@@ -20,8 +20,7 @@ function zuari_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'zuari_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'flex-width'             => true,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'zuari_header_style',
 	) ) );
@@ -52,8 +51,7 @@ if ( ! function_exists( 'zuari_header_style' ) ) :
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :
 			?>
-			.site-title,
-			.site-description {
+			.header {
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
 			}
@@ -61,8 +59,8 @@ if ( ! function_exists( 'zuari_header_style' ) ) :
 		// If the user has set a custom color for the text use that.
 		else :
 			?>
-			.site-title a,
-			.site-description {
+			.header a,
+			.header {
 				color: #<?php echo esc_attr( $header_text_color ); ?>;
 			}
 		<?php endif; ?>
