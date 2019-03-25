@@ -5,6 +5,7 @@
   justify-content: center;
   background-size: cover;
   background-position: center center;
+  margin-bottom: 3rem;
 }
 
 .header__container {
@@ -41,7 +42,7 @@
 // is used on inner pages
 .header_type_bar {
   @extend %col;
-  margin-top: 4rem;
+  padding: 4rem;
   margin-bottom: 6rem;
 }
 

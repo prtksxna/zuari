@@ -29,5 +29,11 @@
       }
     })
   });
-  $('.content').addClass('content_type_hidden');
+
+  $.each( $els, function () {
+    // Hide the content that is out of view
+    if ( $(this).offset().top > $window.height() ) {
+      $('.content').addClass('content_type_hidden');
+    }
+  })
 } ( jQuery ) )

@@ -137,7 +137,8 @@ a {
   flex-direction: column;
   justify-content: center;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  margin-bottom: 3rem; }
 
 .header__container {
   margin-top: 10vh; }
@@ -161,7 +162,7 @@ a {
     margin-bottom: 1.5rem; }
 
 .header_type_bar {
-  margin-top: 4rem;
+  padding: 4rem;
   margin-bottom: 6rem; }
 
 .header_type_bar__title {
