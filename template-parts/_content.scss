@@ -82,6 +82,10 @@
     margin-bottom: 1.5rem;
   }
 
+  .wp-block-cover-text {
+    font-family: var(--body-alt-font);
+  }
+
   pre {
     font-family: var(--mono-font);
     white-space: pre-wrap;
@@ -96,13 +100,82 @@
     max-width: 100%;
   }
 
+  figcaption {
+    font-family: var(--body-alt-font);
+  }
+
+  blockquote.is-style-large,
   blockquote {
+    padding: 0;
     margin: 0 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
     line-height: 1.5rem;
     font-style: italic;
     font-weight: 300;
+
+    cite {
+      text-align: right;
+      display: block;
+      font-size: 0.7rem;
+      margin-top: -1.5rem;
+      opacity: 0;
+      transition: opacity var(--transition-duration) ease;
+      font-family: var(--body-alt-font);
+    }
+
+    &:hover cite {
+      opacity: 1;
+    }
+  }
+
+  .wp-block-quote.is-large p,
+  .wp-block-quote.is-style-large p,
+  blockquote.is-style-large {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .wp-block-pullquote {
+    padding: 3rem 0;
+
+    p {
+      line-height: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    &.is-style-solid-color {
+      padding: 2rem;
+
+      blockquote {
+        max-width: 100%;
+      }
+    }
+
+    blockquote {
+      margin: 0;
+
+      cite {
+        font-family: var(--body-alt-font);
+        text-align: inherit;
+        margin-top: 0;
+        opacity: 1;
+      }
+    }
+  }
+
+  .alignfull {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: auto;
+    max-width: 1000%;
+  }
+
+  .alignwide {
+    margin-left: calc(25% - 25vw);
+    margin-right: calc(25% - 25vw);
+    width: auto;
+    max-width: 1000%;
   }
 }
 

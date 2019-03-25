@@ -308,6 +308,8 @@ a {
 .content__body p {
   margin: 0;
   margin-bottom: 1.5rem; }
+.content__body .wp-block-cover-text {
+  font-family: var(--body-alt-font); }
 .content__body pre {
   font-family: var(--mono-font);
   white-space: pre-wrap; }
@@ -316,13 +318,60 @@ a {
   border-bottom: 1px solid var(--fg-color); }
 .content__body img {
   max-width: 100%; }
+.content__body figcaption {
+  font-family: var(--body-alt-font); }
+.content__body blockquote.is-style-large,
 .content__body blockquote {
+  padding: 0;
   margin: 0 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
   line-height: 1.5rem;
   font-style: italic;
   font-weight: 300; }
+  .content__body blockquote.is-style-large cite,
+  .content__body blockquote cite {
+    text-align: right;
+    display: block;
+    font-size: 0.7rem;
+    margin-top: -1.5rem;
+    opacity: 0;
+    transition: opacity var(--transition-duration) ease;
+    font-family: var(--body-alt-font); }
+  .content__body blockquote.is-style-large:hover cite,
+  .content__body blockquote:hover cite {
+    opacity: 1; }
+.content__body .wp-block-quote.is-large p,
+.content__body .wp-block-quote.is-style-large p,
+.content__body blockquote.is-style-large {
+  font-size: 1.2rem;
+  line-height: 1.5rem; }
+.content__body .wp-block-pullquote {
+  padding: 3rem 0; }
+  .content__body .wp-block-pullquote p {
+    line-height: 2.5rem;
+    margin-bottom: 0; }
+  .content__body .wp-block-pullquote.is-style-solid-color {
+    padding: 2rem; }
+    .content__body .wp-block-pullquote.is-style-solid-color blockquote {
+      max-width: 100%; }
+  .content__body .wp-block-pullquote blockquote {
+    margin: 0; }
+    .content__body .wp-block-pullquote blockquote cite {
+      font-family: var(--body-alt-font);
+      text-align: inherit;
+      margin-top: 0;
+      opacity: 1; }
+.content__body .alignfull {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: auto;
+  max-width: 1000%; }
+.content__body .alignwide {
+  margin-left: calc(25% - 25vw);
+  margin-right: calc(25% - 25vw);
+  width: auto;
+  max-width: 1000%; }
 
 .content__body_type_aside p {
   font-family: var(--body-alt-font); }
