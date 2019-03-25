@@ -26,7 +26,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   --heading-font: 'IBM Plex Sans Condensed', 'Roboto Condensed', sans-serif;
   --mono-font: 'IBM Plex Mono', 'Monaco', monospace;
   --content-width: 640px;
-  --transition-duration: 250ms; }
+  --transition-duration: 333ms; }
 
 body,
 html {
