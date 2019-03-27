@@ -51,6 +51,7 @@
 					'theme_location' => 'header-menu',
 					'menu_id'        => 'primary-menu',
 					'menu_class'     => 'top-navigation',
+					'depth'          => 1,
 				) );
 				?>
 			</nav><!-- #site-navigation -->
@@ -72,6 +73,7 @@
 					'theme_location' => 'header-menu',
 					'menu_id'        => 'primary-menu',
 					'menu_class'     => 'top-navigation top-navigation_type_bar',
+					'depth'          => 1,
 				) );
 				?>
 			</nav><!-- #site-navigation -->
