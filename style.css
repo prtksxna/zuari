@@ -34,6 +34,7 @@ html {
   padding: 0;
   font-display: fallback;
   font-family: var(--body-font);
+  overflow-wrap: break-all;
   font-size: 18px;
   line-height: 1.5rem;
   background: var(--bg-color);
@@ -162,7 +163,7 @@ a {
     margin-bottom: 1.5rem; }
 
 .header_type_bar {
-  padding: 4rem;
+  padding: 4rem 0;
   margin-bottom: 6rem; }
 
 .header_type_bar__title {
@@ -178,6 +179,9 @@ a {
   padding: 5rem 0;
   margin-top: 5rem;
   font-size: 0.9rem; }
+
+.comment-list {
+  padding: 0; }
 
 .comment-list li {
   list-style: none;
