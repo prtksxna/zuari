@@ -1,9 +1,12 @@
 .archive-header {
   @extend %col;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
 }
 
 .archive-header__title {
   font-family: var(--body-alt-font);
+  font-size: 3rem;
 }
 
 .archive-header__title__type {
@@ -12,7 +15,7 @@
   text-transform: lowercase;
   font-variant: small-caps;
   font-weight: 400;
-  margin-bottom: -0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .content-404 {
