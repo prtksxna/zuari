@@ -44,6 +44,63 @@ if ( ! function_exists( 'zuari_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => false,
 		) );
+		add_theme_support( 'editor-color-palette', array(
+			array(
+				'name' => __('Brick', 'zuari'),
+				'slug' => 'brick',
+				'color' => '#825A58'
+			),
+			array(
+				'name' => __('Baby Pink', 'zuari'),
+				'slug' => 'baby pink',
+				'color' => '#E0BAC0'
+			),
+			array(
+				'name' => __('Ecru', 'zuari'),
+				'slug' => 'ecru',
+				'color' => '#E1D9D3'
+			),
+			array(
+				'name' => __('Peach', 'zuari'),
+				'slug' => 'peach',
+				'color' => '#E6AA88'
+			),
+			array(
+				'name' => __('Sky Blue', 'zuari'),
+				'slug' => 'sky-blue',
+				'color' => '#BADCE0'
+			),
+			array(
+				'name' => __('Green', 'zuari'),
+				'slug' => 'green',
+				'color' => '#81AE8A'
+			),
+			array(
+				'name' => __('Olive', 'zuari'),
+				'slug' => 'olive',
+				'color' => '#959686'
+			),
+			array(
+				'name' => __('Dark Green', 'zuari'),
+				'slug' => 'dark-green',
+				'color' => '#113118'
+			),
+			array(
+				'name' => __('Dark Blue', 'zuari'),
+				'slug' => 'dark-blue',
+				'color' => '#283D5D'
+			),
+			array(
+				'name' => __('Light Gray', 'zuari'),
+				'slug' => 'light-gray',
+				'color' => '#eaeaea'
+			),
+			array(
+				'name' => __('Dark Gray', 'zuari'),
+				'slug' => 'dark-gray',
+				'color' => '#222222'
+			)
+		) );
 
 		register_nav_menus( array(
 			'header-menu' => esc_html__( 'Primary', 'zuari' ),
