@@ -17,17 +17,6 @@
         (el_top <= window_bottom)
       ) {
         $el.removeClass( 'content_type_hidden' )
-
-        // Iro
-        if ($el.data().fgColor) {
-          document.documentElement.style
-            .setProperty('--fg-color', $el.data().fgColor);
-        }
-
-        if ($el.data().bgColor) {
-          document.documentElement.style
-            .setProperty('--bg-color', $el.data().bgColor);
-        }
       }
     })
   });

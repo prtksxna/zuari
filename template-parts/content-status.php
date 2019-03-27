@@ -8,7 +8,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?> <?php zuari_iro(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
 		<div class="content__meta">
 			<?php
 			zuari_posted_on();

@@ -7,26 +7,6 @@
  * @package zuari
  */
 
-if ( ! function_exists( 'zuari_iro') ) {
-	function zuari_iro() {
-		$id = get_the_ID();
-		$bg_color = get_post_meta($id, 'bg_color', true);
- 		$fg_color = get_post_meta($id, 'fg_color', true);
-		$bg_string = '';
-		$fg_string = '';
-
-		if ( !empty( $bg_color) ) {
-			$bg_string = 'data-bg-color="'. $bg_color .'"';
-		}
-
-		if ( !empty( $fg_color) ) {
-			$fg_string = 'data-fg-color="'. $fg_color .'"';
-		}
-
-		echo $bg_string . ' ' . $fg_string;
-	}
-}
-
 if ( ! function_exists( 'zuari_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
