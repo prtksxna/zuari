@@ -47,11 +47,12 @@ a {
 
 .archive-header, .content-404, .post-navigation .nav-links,
 .posts-navigation .nav-links, .header__container, .header_type_bar, .comment-list, .comment-respond, .footer__content, .content {
-  max-width: var(--content-width);
+  width: var(--content-width);
   margin: 0 auto; }
   @media only screen and (max-width: 660px) {
     .archive-header, .content-404, .post-navigation .nav-links,
     .posts-navigation .nav-links, .header__container, .header_type_bar, .comment-list, .comment-respond, .footer__content, .content {
+      width: auto;
       margin: 0 20px; } }
 
 .header__title, .header_type_bar__title, .content__title {
@@ -394,10 +395,16 @@ a {
   margin-left: -4rem;
   margin-right: 1.5rem;
   margin-top: 0.3rem; }
+  @media only screen and (max-width: 660px) {
+    .content__body .alignleft {
+      margin-left: 0; } }
 .content__body .alignright {
   margin-right: -4rem;
   margin-left: 1.5rem;
   margin-top: 0.3rem; }
+  @media only screen and (max-width: 660px) {
+    .content__body .alignright {
+      margin-right: 0; } }
 .content__body .aligncenter {
   margin-top: 0; }
 

@@ -50,10 +50,11 @@ a {
 }
 
 %col {
-  max-width: var(--content-width);
+  width: var(--content-width);
   margin: 0 auto;
 
   @media only screen and (max-width: 660px) {
+    width: auto;
     margin: 0 20px;
   }
 }

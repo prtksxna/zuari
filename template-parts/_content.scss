@@ -194,12 +194,19 @@
     margin-left: -4rem;
     margin-right: 1.5rem;
     margin-top: 0.3rem;
+    @media only screen and (max-width: 660px) {
+      margin-left: 0;
+    }
   }
 
   .alignright {
     margin-right: -4rem;
     margin-left: 1.5rem;
     margin-top: 0.3rem;
+
+    @media only screen and (max-width: 660px) {
+      margin-right: 0;
+    }
   }
 
   .aligncenter {
