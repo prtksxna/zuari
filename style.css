@@ -9,7 +9,7 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: zuari
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: custom-background, custom-logo, custom-menu, featured-images, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 
@@ -207,7 +207,8 @@ a {
   display: none; }
 
 .comment-content {
-  font-family: var(--body-alt-font); }
+  font-family: var(--body-alt-font);
+  margin-top: -1rem; }
 
 /* Form */
 .comment-respond {
