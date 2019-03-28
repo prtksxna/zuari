@@ -82,7 +82,7 @@ function zuari_header_bgcolor_css() {
 	?>
 	<style media="screen">
 		.header {
-			background-color: <?php echo get_theme_mod('header_bgcolor', 'eaeaea'); ?>;
+			background-color: <?php echo esc_attr(get_theme_mod('header_bgcolor', 'eaeaea')); ?>;
 		}
 	</style>
 <?php

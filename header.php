@@ -17,7 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700|IBM+Plex+Sans+Condensed:400,700|IBM+Plex+Serif:300i,400,400i,700|IBM+Plex+Sans:100,300i,400,700" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -38,7 +37,7 @@
 			<?php $zuari_description = get_bloginfo( 'description', 'display' );
 			if ( $zuari_description || is_customize_preview() ) :
 				?>
-				<p class="header__description"><?php echo $zuari_description; /* WPCS: xss ok. */ ?></p>
+				<p class="header__description"><?php echo esc_html($zuari_description); /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 			<?php if ( is_active_sidebar( 'sidebar-intro' ) ) { ?>
 				<div class="header__text">
@@ -64,7 +63,7 @@
 				<?php $zuari_description = get_bloginfo( 'description', 'display' );
 				if ( $zuari_description || is_customize_preview() ) :
 					?>
-					<span class="header_type_bar__description">&mdash; <?php echo $zuari_description; /* WPCS: xss ok. */ ?></span>
+					<span class="header_type_bar__description">&mdash; <?php echo esc_html($zuari_description); /* WPCS: xss ok. */ ?></span>
 				<?php endif; ?>
 			</h1>
 			<nav>
