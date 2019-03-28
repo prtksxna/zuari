@@ -12,6 +12,15 @@
       margin-left: -11rem;
     }
   }
+
+  &.sticky {
+    border: 2px solid var( --fg-color );
+    padding: 2rem 3rem;
+
+    .content__meta {
+      display: none;
+    }
+  }
 }
 
 .content_type_hidden {
@@ -100,6 +109,9 @@
     max-width: 100%;
   }
 
+  .wp-caption,
+  .wp-caption-text,
+  .gallery-caption,
   figcaption {
     font-family: var(--body-alt-font);
   }
@@ -176,6 +188,22 @@
     margin-right: calc(25% - 25vw);
     width: auto;
     max-width: 1000%;
+  }
+
+  .alignleft {
+    margin-left: -4rem;
+    margin-right: 1.5rem;
+    margin-top: 0.3rem;
+  }
+
+  .alignright {
+    margin-right: -4rem;
+    margin-left: 1.5rem;
+    margin-top: 0.3rem;
+  }
+
+  .aligncenter {
+    margin-top: 0;
   }
 }
 
