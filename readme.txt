@@ -1,38 +1,25 @@
 === zuari ===
-
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
+Contributors: prtksxna, siddr, automattic
+Tags: blog, one-column, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, flexible-header, footer-widgets, sticky-post, theme-options, translation-ready, block-styles, wide-blocks
 Requires at least: 4.5
-Tested up to: 4.8
+Tested up to: 5.1.1
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called zuari.
+A theme to document your stream of life
 
 == Description ==
 
-Description
+The Zuari theme for Wordpress is minimal yet extensive. It has different styles for post types and allows you to customize colors and images. It also supports the new Gutenberg alignments.
 
-== Installation ==
-
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
-
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-zuari includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0 - March 29 2019t =
 * Initial release
 
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+* IBM Plex https://www.ibm.com/plex/
