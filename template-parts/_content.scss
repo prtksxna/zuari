@@ -105,7 +105,9 @@
     border-bottom: 1px solid var(--fg-color);
   }
 
+  .wp-block-image,
   img {
+    margin: 0;
     max-width: 100%;
   }
 
@@ -211,6 +213,34 @@
 
   .aligncenter {
     margin-top: 0;
+  }
+
+  .wp-block-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: 660px) {
+      flex-direction: column;
+    }
+  }
+
+  .wp-block-column {
+    flex: 1;
+    margin: 0;
+    margin: 0 0.5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media only screen and (max-width: 660px) {
+      margin: 0;
+    }
   }
 }
 
