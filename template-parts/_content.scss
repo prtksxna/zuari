@@ -242,6 +242,27 @@
       margin: 0;
     }
   }
+
+  .wp-block-button__link {
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+    border-radius: 0.5rem;
+    font-family: var(--body-alt-font);
+    text-transform: lowercase;
+    font-variant: small-caps;
+    line-height: 100%;
+  }
+
+  .is-style-outline .wp-block-button__link {
+    border-radius: 0;
+    border: 1px solid var(--fg-color);
+    background: transparent;
+    color: var(--fg-color)
+  }
+
+  .is-style-squared .wp-block-button__link {
+    border-radius: 0;
+  }
 }
 
 .content__body_type_aside {
