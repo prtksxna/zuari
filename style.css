@@ -331,14 +331,14 @@ a {
 .content__body p {
   margin: 0;
   margin-bottom: 1.5rem; }
-.content__body .wp-block-cover-text {
-  font-family: var(--body-alt-font); }
 .content__body pre {
   font-family: var(--mono-font);
   white-space: pre-wrap; }
 .content__body hr {
   border: none;
   border-bottom: 1px solid var(--fg-color); }
+.content__body .wp-block-cover-text {
+  font-family: var(--body-alt-font); }
 .content__body .wp-block-image,
 .content__body img {
   margin: 0;
