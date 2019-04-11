@@ -193,6 +193,7 @@
   }
 
   .alignleft {
+    float: left;
     margin-left: -4rem;
     margin-right: 1.5rem;
     margin-top: 0.3rem;
@@ -202,6 +203,7 @@
   }
 
   .alignright {
+    float: right;
     margin-right: -4rem;
     margin-left: 1.5rem;
     margin-top: 0.3rem;
@@ -262,6 +264,30 @@
 
   .is-style-squared .wp-block-button__link {
     border-radius: 0;
+  }
+
+  .wp-block-spacer {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .wp-block-gallery .blocks-gallery-item {
+    figcaption {
+      transition: opacity var(--transition-duration) ease,
+        padding-bottom var(--transition-duration) ease;
+      opacity: 0;
+      line-height: 1rem;
+      margin: 0;
+      max-width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+
+    &:hover figcaption {
+      opacity: 1;
+      padding-bottom: 1rem;
+    }
   }
 }
 
