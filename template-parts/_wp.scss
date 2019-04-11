@@ -186,3 +186,7 @@ blockquote.is-style-large {
     padding-bottom: 1rem;
   }
 }
+
+p.has-drop-cap:not(:focus):first-letter {
+  font-size: 4rem;
+}

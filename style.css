@@ -330,7 +330,8 @@ a {
 .content__body pre,
 .content__body p {
   margin: 0;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  line-height: 1.5; }
 .content__body pre {
   font-family: var(--mono-font);
   white-space: pre-wrap; }
@@ -466,6 +467,8 @@ a {
 .content__body .wp-block-gallery .blocks-gallery-item:hover figcaption {
   opacity: 1;
   padding-bottom: 1rem; }
+.content__body p.has-drop-cap:not(:focus):first-letter {
+  font-size: 4rem; }
 
 .content__body_type_aside p {
   font-family: var(--body-alt-font); }
