@@ -193,3 +193,25 @@ blockquote.is-style-large {
 p.has-drop-cap:not(:focus):first-letter {
   font-size: 4rem;
 }
+
+table {
+    font-family: var(--body-alt-font);
+    border-collapse: collapse;
+    width: 100%;
+
+    td, th {
+      border: 1px solid var(--fg-color);
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    &.is-style-stripes {
+      td, th {
+        border: none;
+      }
+
+      tr:nth-child(odd) {
+        background: var(--fade2-color);
+      }
+    }
+}

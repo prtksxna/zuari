@@ -476,6 +476,18 @@ a {
   padding-bottom: 1rem; }
 .content__body p.has-drop-cap:not(:focus):first-letter {
   font-size: 4rem; }
+.content__body table {
+  font-family: var(--body-alt-font);
+  border-collapse: collapse;
+  width: 100%; }
+  .content__body table td, .content__body table th {
+    border: 1px solid var(--fg-color);
+    padding: 0.5rem;
+    text-align: left; }
+  .content__body table.is-style-stripes td, .content__body table.is-style-stripes th {
+    border: none; }
+  .content__body table.is-style-stripes tr:nth-child(odd) {
+    background: var(--fade2-color); }
 
 .content__body_type_aside p {
   font-family: var(--body-alt-font); }
