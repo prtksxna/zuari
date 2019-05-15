@@ -102,6 +102,12 @@
     border-bottom: 1px solid var(--fg-color);
   }
 
+  figure,
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
   @import 'wp';
 }
 

@@ -13,6 +13,9 @@ img {
 .gallery-caption,
 figcaption {
   font-family: var(--body-alt-font);
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: var(--fg-color);
 }
 
 blockquote.is-style-large,

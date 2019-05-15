@@ -338,6 +338,10 @@ a {
 .content__body hr {
   border: none;
   border-bottom: 1px solid var(--fg-color); }
+.content__body figure,
+.content__body img {
+  height: auto;
+  max-width: 100%; }
 .content__body .wp-block-cover-text {
   font-family: var(--body-alt-font); }
 .content__body .wp-block-image,
@@ -348,7 +352,10 @@ a {
 .content__body .wp-caption-text,
 .content__body .gallery-caption,
 .content__body figcaption {
-  font-family: var(--body-alt-font); }
+  font-family: var(--body-alt-font);
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: var(--fg-color); }
 .content__body blockquote.is-style-large,
 .content__body blockquote {
   padding: 0;
