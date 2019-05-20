@@ -215,3 +215,10 @@ table {
       }
     }
 }
+
+.page-links {
+  font-family: var(--body-alt-font);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}

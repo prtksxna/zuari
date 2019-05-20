@@ -488,6 +488,11 @@ a {
     border: none; }
   .content__body table.is-style-stripes tr:nth-child(odd) {
     background: var(--fade2-color); }
+.content__body .page-links {
+  font-family: var(--body-alt-font);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  opacity: 0.8; }
 
 .content__body_type_aside p {
   font-family: var(--body-alt-font); }
