@@ -237,7 +237,13 @@ a {
   text-transform: lowercase;
   display: block; }
 
-.comment-form input,
+.comment-form label[for="wp-comment-cookies-consent"] {
+  display: inline; }
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form input[type="submit"],
 .comment-form textarea {
   box-sizing: border-box;
   width: 100%;
