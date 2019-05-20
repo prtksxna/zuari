@@ -107,11 +107,25 @@
   img {
     height: auto;
     max-width: 100%;
+    margin-left: 0;
   }
 
   @import 'wp';
 }
 
+.post_format-post-format-chat .content__body{
+  font-family: var(--mono-font);
+  font-size: 0.75rem;
+}
+
+.post_format-post-format-status .content__body {
+  font-family: var(--body-alt-font);
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 3rem
+}
+
+.post_format-post-format-aside .content__body,
 .content__body_type_aside {
   p {
     font-family: var(--body-alt-font);
