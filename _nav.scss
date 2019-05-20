@@ -8,7 +8,7 @@
   letter-spacing: 1px;
   font-size: 0.9rem;
   padding: 0;
-  margin: 0;  
+  margin: 0;
 
   ul {
     padding: 0;
@@ -37,12 +37,13 @@
 
   .nav-links {
     @extend %col;
+    display: flex;
   }
 
   .nav-previous,
   .nav-next {
-    width: 50%;
     display: inline-block;
+    width: 100%;
 
     a {
       display: block;

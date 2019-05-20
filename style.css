@@ -109,12 +109,15 @@ a {
 .posts-navigation {
   background: var(--fade2-color);
   font-family: var(--body-alt-font); }
+  .post-navigation .nav-links,
+  .posts-navigation .nav-links {
+    display: flex; }
   .post-navigation .nav-previous,
   .post-navigation .nav-next,
   .posts-navigation .nav-previous,
   .posts-navigation .nav-next {
-    width: 50%;
-    display: inline-block; }
+    display: inline-block;
+    width: 100%; }
     .post-navigation .nav-previous a,
     .post-navigation .nav-next a,
     .posts-navigation .nav-previous a,
