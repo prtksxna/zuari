@@ -46,6 +46,7 @@ if ( ! function_exists( 'zuari_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => false,
 		) );
+		# If you edit this update _wp.scss too
 		add_theme_support( 'editor-color-palette', array(
 			array(
 				'name' => __('Brick', 'zuari'),
@@ -54,7 +55,7 @@ if ( ! function_exists( 'zuari_setup' ) ) :
 			),
 			array(
 				'name' => __('Baby Pink', 'zuari'),
-				'slug' => 'baby pink',
+				'slug' => 'baby-pink',
 				'color' => '#E0BAC0'
 			),
 			array(

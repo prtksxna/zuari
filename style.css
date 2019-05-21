@@ -568,6 +568,50 @@ a {
   width: 12%; }
 .content__body .gallery-columns-9 .gallery-item {
   width: 9%; }
+.content__body .has-brick-color {
+  color: #825A58; }
+.content__body .has-baby-pink-color {
+  color: #E0BAC0; }
+.content__body .has-ecru-color {
+  color: #E1D9D3; }
+.content__body .has-peach-color {
+  color: #E6AA88; }
+.content__body .has-sky-blue-color {
+  color: #BADCE0; }
+.content__body .has-green-color {
+  color: #81AE8A; }
+.content__body .has-olive-color {
+  color: #959686; }
+.content__body .has-dark-green-color {
+  color: #113118; }
+.content__body .has-dark-blue-color {
+  color: #283D5D; }
+.content__body .has-light-gray-color {
+  color: #eaeaea; }
+.content__body .has-dark-gray-color {
+  color: #222; }
+.content__body .has-brick-background-color {
+  background-color: #825A58; }
+.content__body .has-baby-pink-background-color {
+  background-color: #E0BAC0; }
+.content__body .has-ecru-background-color {
+  background-color: #E1D9D3; }
+.content__body .has-peach-background-color {
+  background-color: #E6AA88; }
+.content__body .has-sky-blue-background-color {
+  background-color: #BADCE0; }
+.content__body .has-green-background-color {
+  background-color: #81AE8A; }
+.content__body .has-olive-background-color {
+  background-color: #959686; }
+.content__body .has-dark-green-background-color {
+  background-color: #113118; }
+.content__body .has-dark-blue-background-color {
+  background-color: #283D5D; }
+.content__body .has-light-gray-background-color {
+  background-color: #eaeaea; }
+.content__body .has-dark-gray-background-color {
+  background-color: #222; }
 
 .post_format-post-format-chat .content__body {
   font-family: var(--mono-font);
