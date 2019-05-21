@@ -425,7 +425,8 @@ a {
   margin-left: calc(25% - 25vw);
   margin-right: calc(25% - 25vw);
   width: auto;
-  max-width: 1000%; }
+  max-width: 1000%;
+  clear: both; }
 .content__body > .alignleft {
   margin-left: 0; }
 .content__body > .alignleft ~ .alignleft {
@@ -465,6 +466,10 @@ a {
   @media only screen and (max-width: 660px) {
     .content__body .wp-block-column {
       margin: 0; } }
+.content__body .alignfull .wp-block-column:first-child {
+  margin-left: 1rem; }
+.content__body .alignfull .wp-block-column:last-child {
+  margin-right: 1rem; }
 .content__body .wp-block-button__link {
   background-color: var(--fg-color);
   color: var(--bg-color);
