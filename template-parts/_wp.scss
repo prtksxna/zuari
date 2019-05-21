@@ -92,9 +92,21 @@ blockquote.is-style-large {
   max-width: 1000%;
 }
 
+// If the first element on the post is a left aligned image then we can't
+// have it coming out of the content body since the meta data is to its
+// left. So we remove the margin for the first instance of it. This isn't
+// ideal, but I can't think of any other way.
+// Hack from: https://stackoverflow.com/a/8539107/366138
+& > .alignleft {
+  margin-left: 0;
+}
+
+> .alignleft ~ .alignleft {
+  margin-left: -4rem;
+}
+
 .alignleft {
   float: left;
-  margin-left: -4rem;
   margin-right: 1.5rem;
   margin-top: 0.3rem;
   @media only screen and (max-width: 660px) {

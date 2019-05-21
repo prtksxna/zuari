@@ -426,9 +426,12 @@ a {
   margin-right: calc(25% - 25vw);
   width: auto;
   max-width: 1000%; }
+.content__body > .alignleft {
+  margin-left: 0; }
+.content__body > .alignleft ~ .alignleft {
+  margin-left: -4rem; }
 .content__body .alignleft {
   float: left;
-  margin-left: -4rem;
   margin-right: 1.5rem;
   margin-top: 0.3rem; }
   @media only screen and (max-width: 660px) {
