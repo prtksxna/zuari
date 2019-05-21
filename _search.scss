@@ -1,0 +1,29 @@
+.search-form {
+  display: flex;
+
+  label {
+    width: 75%;
+  }
+}
+
+.search-submit,
+.search-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  border: 1px solid var(--fg-color);
+  color: var(--fg-color);
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.search-submit {
+  border: none;
+  width: 25%;
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
