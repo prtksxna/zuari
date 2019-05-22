@@ -1,8 +1,8 @@
 === zuari ===
 Contributors: prtksxna, siddr, automattic
 Tags: blog, one-column, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, flexible-header, footer-widgets, sticky-post, theme-options, translation-ready, block-styles, wide-blocks
-Requires at least: 4.5
-Tested up to: 5.1.1
+Requires at least: 5.2
+Tested up to: 5.2.1
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
