@@ -169,6 +169,19 @@ a {
   text-transform: uppercase;
   font-weight: bold; }
 
+.widget-title {
+  margin-bottom: 0; }
+
+.wp-block-archives-list,
+.wp-block-categories-list,
+.wp-block-latest-posts,
+.wp-block-latest-comments,
+.widget ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  font-family: var(--body-alt-font); }
+
 .header {
   height: 100vh;
   display: flex;
