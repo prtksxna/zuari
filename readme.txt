@@ -16,7 +16,7 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 
 == Changelog ==
 
-= 1.0 - March 29 2019t =
+= 1.0 - May 26 2019 =
 * Initial release
 
 == Credits ==
