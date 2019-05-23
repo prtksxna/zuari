@@ -382,6 +382,9 @@ a {
   font-size: 3rem;
   line-height: 3rem; }
 
+.bypostauthor {
+  font-family: var(--body-alt-font); }
+
 .content__body pre,
 .content__body p {
   margin: 0;
