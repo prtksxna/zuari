@@ -171,6 +171,15 @@ function zuari_scripts() {
 add_action( 'wp_enqueue_scripts', 'zuari_scripts' );
 
 /**
+ * wp_body_open back-compat
+ */
+if ( ! function_exists( 'wp_body_open' ) ) {
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
+	}
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
