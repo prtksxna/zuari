@@ -85,6 +85,13 @@
   line-height: 3rem;
 }
 
+.content__thumbnail {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .bypostauthor {
   font-family: var(--body-alt-font);
 }

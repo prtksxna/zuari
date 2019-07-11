@@ -5,7 +5,7 @@ Theme URI: https://github.com/prtksxna/zuari
 Author: Prateek Saxena
 Author URI: http://prtksxna.com
 Description: A stream of your life
-Version: 1.0.0
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: zuari
@@ -381,6 +381,10 @@ a {
   font-weight: 100;
   font-size: 3rem;
   line-height: 3rem; }
+
+.content__thumbnail img {
+  max-width: 100%;
+  height: auto; }
 
 .bypostauthor {
   font-family: var(--body-alt-font); }
