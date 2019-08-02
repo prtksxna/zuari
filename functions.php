@@ -112,6 +112,13 @@ if ( ! function_exists( 'zuari_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'zuari_setup' );
 
+if ( ! function_exists( 'zuari_init' ) ) :
+	function zuari_init() {
+		remove_filter( 'the_content', array( 'Syn_Config', 'the_content' ) , 30 );
+	}
+endif;
+add_action( 'init', 'zuari_init' );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

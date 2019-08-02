@@ -65,6 +65,12 @@ if ( ! function_exists( 'zuari_entry_footer' ) ) :
 			echo '</span>';
 		}*/
 
+		if ( function_exists( 'get_syndication_links' ) ) {
+			echo get_syndication_links( null, array(
+				'show_text_before' => null
+			) );
+		}
+
 		edit_post_link(
 			sprintf(
 				wp_kses(
