@@ -99,3 +99,33 @@
 .comment-form .required {
   display: none;
 }
+
+/* Webmention */
+#webmention-form {
+  @extend %col;
+  font-family: var(--body-alt-font);
+}
+
+#webmention-form p {
+  margin: 0;
+}
+
+#webmention-form input[type="url"],
+#webmention-form input[type="submit"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  border: 1px solid var(--fg-color);
+  color: var(--fg-color);
+  background-color: transparent;
+}
+
+#webmention-form input[type="submit"] {
+  border: none;
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
