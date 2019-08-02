@@ -23,6 +23,9 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 * Changes suggested by Rabmalin during review
 === 1.0.2 ==
 * Fix: Featured images weren't responsive (#71)
+=== 1.1.0 ===
+* Feature: Add support for Syndication Links plugin
+* Feature: Add support for Webmention plugin
 
 == Credits ==
 
