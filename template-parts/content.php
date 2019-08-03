@@ -9,12 +9,12 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('content h-entry'); ?>>
 	<?php
 	if ( is_singular() ) {
-		the_title( '<h1 class="content__title content__title_type_big">', '</h1>' );
+		the_title( '<h1 class="content__title content__title_type_big p-name">', '</h1>' );
 	} else {
-		the_title( '<h2 class="content__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		the_title( '<h2 class="content__title p-name"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 	} ?>
 
 	<?php if ( 'post' === get_post_type() ) {	?>
@@ -28,7 +28,7 @@
 
 	<?php zuari_post_thumbnail(); ?>
 
-	<div class="content__body">
+	<div class="content__body e-content">
 		<?php
 		the_content( sprintf(
 			wp_kses(

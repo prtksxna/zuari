@@ -8,7 +8,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('content h-entry'); ?>>
 	<div class="content__meta">
 		<?php
 		zuari_posted_on();
@@ -18,7 +18,7 @@
 
 	<?php zuari_post_thumbnail(); ?>
 
-	<div class="content__body content__body_type_aside">
+	<div class="content__body content__body_type_aside e-content">
 		<?php
 		the_content( sprintf(
 			wp_kses(

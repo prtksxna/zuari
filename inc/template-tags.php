@@ -12,7 +12,7 @@ if ( ! function_exists( 'zuari_posted_on' ) ) :
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
 	function zuari_posted_on() {
-		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+		$time_string = '<time class="entry-date published updated dt-published" datetime="%1$s">%2$s</time>';
 
 		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( DATE_W3C ) ),
@@ -22,7 +22,7 @@ if ( ! function_exists( 'zuari_posted_on' ) ) :
 		);
 
 		$posted_on = sprintf(
-			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="u-url">' . $time_string . '</a>'
 		);
 
 		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
@@ -51,12 +51,13 @@ if ( ! function_exists( 'zuari_entry_footer' ) ) :
 	function zuari_entry_footer() {
 		// Hide tag text for pages.
 		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '<span class="content__meta__tags">', ' ', '</span>' );
-			if ( $tags_list ) {
-				/* translators: 1: list of tags. */
-				printf( $tags_list ); // WPCS: XSS OK.
+			echo '<span class="content__meta__tags">';
+			foreach (get_the_tags() as $tag) {
+				echo "<a rel=\"tag\" class=\"p-category\" href=\"";
+        echo esc_url(get_tag_link($tag->term_id));
+				echo "\">".$tag->name."</a>\n";
 			}
+			echo '</span>';
 		}
 
 		/*if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
@@ -106,7 +107,9 @@ if ( ! function_exists( 'zuari_post_thumbnail' ) ) :
 			?>
 
 			<div class="content__thumbnail">
-				<?php the_post_thumbnail('large'); ?>
+				<?php the_post_thumbnail('large', array(
+					'class' => 'u-photo'
+				)); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
@@ -114,6 +117,7 @@ if ( ! function_exists( 'zuari_post_thumbnail' ) ) :
 		<a class="content__thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 			<?php
 			the_post_thumbnail( 'large', array(
+				'class' => 'u-photo',
 				'alt' => the_title_attribute( array(
 					'echo' => false,
 				) ),
