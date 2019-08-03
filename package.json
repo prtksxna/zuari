@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/prtksxna/zuari#readme",
   "devDependencies": {
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0"
   }
