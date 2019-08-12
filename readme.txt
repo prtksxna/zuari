@@ -26,6 +26,8 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 === 1.1.0 ===
 * Feature: Add support for Syndication Links plugin
 * Feature: Add support for Webmention plugin
+=== 1.2.0 ===
+* Feature: Add microformats support
 
 == Credits ==
 
