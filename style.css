@@ -518,7 +518,7 @@ a {
     .content__body .alignright {
       margin-right: 0; } }
 .content__body .aligncenter {
-  margin: 0; }
+  margin: 0 auto; }
 .content__body .wp-block-columns {
   display: flex;
   justify-content: space-between;
