@@ -386,7 +386,9 @@ a {
   font-variant: small-caps;
   border-radius: 2px;
   padding: 0 7px 3px 7px;
-  margin-left: 3px; }
+  margin-left: 3px;
+  margin-bottom: 6px;
+  display: inline-block; }
 
 .content__title {
   font-size: 2rem;
