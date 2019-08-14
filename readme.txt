@@ -28,6 +28,9 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 * Feature: Add support for Webmention plugin
 === 1.2.0 ===
 * Feature: Add microformats support
+=== 1.2.1 ===
+* Fix: Center align blocks are now correctly aligned
+* Fix: Tags don't break into multiple lines
 
 == Credits ==
 
