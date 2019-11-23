@@ -29,6 +29,25 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   --content-width: 640px;
   --transition-duration: 333ms; }
 
+/* Setting dark-mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #222;
+    --fg-color: #bdc3c7;
+  }
+  img {
+    opacity: .75!important;
+    transition: opacity .5s ease-in-out!important;
+  }
+  img:hover {
+    opacity: 1!important;
+  }
+  figcaption a {
+    color: #FFF!important;
+  }
+  line-height: 1.75rem!important;
+}
+
 body,
 html {
   margin: 0;
