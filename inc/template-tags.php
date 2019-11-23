@@ -52,10 +52,12 @@ if ( ! function_exists( 'zuari_entry_footer' ) ) :
 		// Hide tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			echo '<span class="content__meta__tags">';
-			foreach (get_the_tags() as $tag) {
-				echo "<a rel=\"tag\" class=\"p-category\" href=\"";
-        echo esc_url(get_tag_link($tag->term_id));
-				echo "\">".$tag->name."</a>\n";
+			if (get_the_tags()) {
+				foreach (get_the_tags() as $tag) {
+					echo "<a rel=\"tag\" class=\"p-category\" href=\"";
+					echo esc_url(get_tag_link($tag->term_id));
+					echo "\">".$tag->name."</a>\n";
+				}
 			}
 			echo '</span>';
 		}
