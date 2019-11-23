@@ -31,6 +31,10 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 === 1.2.1 ===
 * Fix: Center align blocks are now correctly aligned
 * Fix: Tags don't break into multiple lines
+=== 1.2.2 ===
+* Fix: Improve font loading performance
+* Fix: Improve the styling of the 'skip to content' links
+* Fix: Bug when trying to get post tags
 
 == Credits ==
 
