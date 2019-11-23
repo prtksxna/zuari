@@ -30,8 +30,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   --transition-duration: 333ms;
 }
 
-figcaption a{color: #FFF!important;}
-
 /* Setting dark-mode */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -45,6 +43,10 @@ figcaption a{color: #FFF!important;}
   img:hover {
     opacity: 1!important;
   }
+  figcaption a {
+    color: #FFF!important;
+  }
+  line-height: 1.75rem;
 }
 
 
