@@ -35,3 +35,26 @@
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
+
+/* Setting dark-mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #222;
+    --fg-color: #bdc3c7;
+  }
+
+  img {
+    opacity: 0.75 !important;
+    transition: opacity var(--transition-duration) !important;
+  }
+
+  img:hover {
+    opacity: 1 !important;
+  }
+
+  figcaption a {
+    color: #fff !important;
+  }
+
+  line-height: 1.75rem !important;
+}

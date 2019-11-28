@@ -40,4 +40,12 @@
 			$( '.header' ).css( 'background-image', 'url(' + to + ')');
     } );
   } );
+
+  // Foreground color variable
+  wp.customize( 'fgcolor', function ( value ) {
+    value.bind( function ( to ) {
+      document.documentElement.style.setProperty( '--fg-color', to );
+    } );
+  } );
+
 } )( jQuery );

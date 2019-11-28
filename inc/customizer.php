@@ -34,6 +34,21 @@ function zuari_customize_register( $wp_customize ) {
 		)
 	));
 
+	$wp_customize->add_setting('fgcolor', array(
+		'default' => '#000000',
+		'transport' => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize,
+		'fgcolor',
+		array(
+			'label'      => __( 'Foreground Color', 'zuari' ),
+			'section'    => 'colors',
+			'settings'   => 'fgcolor',
+	    #'priority'   => 5
+		)
+	));
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
@@ -89,3 +104,19 @@ function zuari_header_bgcolor_css() {
 <?php
 }
 add_action( 'wp_head', 'zuari_header_bgcolor_css');
+
+/**
+ * Render the text and links in the correct color.
+ *
+ * @return void
+ */
+function zuari_fgcolor_css() {
+	?>
+	<style media="screen">
+		:root {
+			--fg-color: <?php echo esc_attr(get_theme_mod('fgcolor', '000000')); ?>;
+		}
+	</style>
+<?php
+}
+add_action( 'wp_head', 'zuari_fgcolor_css');
