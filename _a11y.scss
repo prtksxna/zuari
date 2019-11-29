@@ -38,23 +38,23 @@
 
 /* Setting dark-mode */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #222;
-    --fg-color: #bdc3c7;
-  }
+	// The colors are being changed from the `zuari_dark_mode`
+	// function in `inc/customizer.php`. This is because it loads
+	// a <style> tag AFTER all the customizations, thus
+	// overriding them.
 
-  img {
-    opacity: 0.75 !important;
-    transition: opacity var(--transition-duration) !important;
-  }
+	.content__body {
+		img {
+	    opacity: 0.75;
+	    transition: opacity var(--transition-duration);
+	  }
 
-  img:hover {
-    opacity: 1 !important;
-  }
+	  img:hover {
+	    opacity: 1;
+	  }
 
-  figcaption a {
-    color: #fff !important;
-  }
-
-  line-height: 1.75rem !important;
+		p {
+			line-height: 1.75rem;
+		}
+	}
 }

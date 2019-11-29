@@ -718,20 +718,12 @@ a {
 
 /* Setting dark-mode */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #222;
-    --fg-color: #bdc3c7; }
-
-  img {
-    opacity: 0.75 !important;
-    transition: opacity var(--transition-duration) !important; }
-
-  img:hover {
-    opacity: 1 !important; }
-
-  figcaption a {
-    color: #fff !important; }
-
-  line-height: 1.75rem !important; }
+  .content__body img {
+    opacity: 0.75;
+    transition: opacity var(--transition-duration); }
+  .content__body img:hover {
+    opacity: 1; }
+  .content__body p {
+    line-height: 1.75rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -50,6 +50,21 @@ function zuari_customize_register( $wp_customize ) {
 		)
 	));
 
+	$wp_customize->add_setting( 'enable_darkmode', array (
+		'default' => '',
+		'sanitize_callback' => 'sanitize_enable_darkmode'
+	) );
+	$wp_customize->add_control( new WP_CUstomize_Control(
+		$wp_customize,
+		'enable_darkmode',
+		array(
+			'label' => __( 'Allow the operating system\'s dark mode to override my color settings.', 'zuari' ),
+			'section' => 'colors',
+			'settings' => 'enable_darkmode',
+			'type' => 'checkbox'
+		)
+	) );
+
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.header__title a',
@@ -120,3 +135,36 @@ function zuari_fgcolor_css() {
 <?php
 }
 add_action( 'wp_head', 'zuari_fgcolor_css');
+
+/**
+ * Override the colors and add the dark mode CSS class if enabled
+ *
+ * @return void
+ */
+function zuari_dark_mode() {
+	if ( get_theme_mod( 'enable_darkmode') === '1' ) {
+
+		?>
+			<style media="screen">
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--bg-color: #222;
+					--fg-color: #bdc3c7;
+				}
+
+				body.custom-background {
+					background-color: var(--bg-color) !important;
+				}
+			}
+			</style>
+		<?php
+	}
+}
+add_action( 'wp_head', 'zuari_dark_mode');
+
+function sanitize_enable_darkmode( $input ) {
+	if ( $input === true || $input === '1' ) {
+		return '1';
+	}
+	return '';
+}
