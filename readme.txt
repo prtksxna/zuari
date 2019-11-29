@@ -35,6 +35,11 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 * Fix: Improve font loading performance
 * Fix: Improve the styling of the 'skip to content' links
 * Fix: Bug when trying to get post tags
+=== 1.3.0 ===
+* Feature: Add a customizer setting to change the foreground color of the site
+* Feature: Add dark mode. Setting can be enabled from the Colors section in
+  Customizer. It is off by default and will take affect when the operating
+  system's dark mode is enabled.
 
 == Credits ==
 
