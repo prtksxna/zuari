@@ -44,7 +44,8 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 * Feature: Add accessibility-ready tag
 * Fix: Keyboard accessibility for links and forms
 * Fix: Add aria markers
-
+=== 1.4.1 ===
+* Chore: Remove accessibility-ready tag (shouldn't add before review)
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
