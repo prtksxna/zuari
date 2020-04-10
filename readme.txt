@@ -4,7 +4,7 @@ Tags: blog, one-column, custom-background, custom-colors, custom-header, custom-
 Requires PHP: 5.6
 Requires at least: 5.2
 Tested up to: 5.2.1
-Stable tag: 1.0.0
+Stable tag: 1.4.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -40,6 +40,10 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 * Feature: Add dark mode. Setting can be enabled from the Colors section in
   Customizer. It is off by default and will take affect when the operating
   system's dark mode is enabled.
+=== 1.4.0 ==
+* Feature: Add accessibility-ready tag
+* Fix: Keyboard accessibility for links and forms
+* Fix: Add aria markers
 
 == Credits ==
 
