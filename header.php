@@ -28,6 +28,7 @@
 
 	<?php if ( is_front_page() && is_home() ) { ?>
 	<header
+		role="banner"
 		class="header"
 		style="background-image: url(<?php header_image() ?>)"
 	>
@@ -46,7 +47,7 @@
 					<?php dynamic_sidebar( 'sidebar-intro' ); ?>
 				</div><!-- #secondary -->
 			<?php } ?>
-			<nav>
+			<nav role="navigation">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'header-menu',
@@ -59,7 +60,7 @@
 		</div>
 	</header>
 	<?php } else { ?>
-		<header class="header_type_bar">
+		<header class="header_type_bar" role="banner">
 			<h1 class="header_type_bar__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				<?php $zuari_description = get_bloginfo( 'description', 'display' );
@@ -68,7 +69,7 @@
 					<span class="header_type_bar__description">&mdash; <?php echo esc_html($zuari_description); /* WPCS: xss ok. */ ?></span>
 				<?php endif; ?>
 			</h1>
-			<nav>
+			<nav role="navigation">
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'header-menu',
@@ -81,4 +82,4 @@
 		</header>
 	<?php } ?>
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content" role="main">

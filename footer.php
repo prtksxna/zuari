@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="footer">
+	<footer id="colophon" class="footer" role="contentinfo">
 		<?php if ( is_active_sidebar( 'sidebar-footer' ) ) { ?>
 			<div class="footer__content">
 				<?php dynamic_sidebar( 'sidebar-footer' ); ?>
