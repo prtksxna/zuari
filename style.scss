@@ -47,7 +47,18 @@ html {
 
 a {
   color: var(--fg-color);
-  transition: color var(--transition-duration) ease;
+  transition: color var(--transition-duration) ease,
+    background-color var(--transition-duration) ease;
+
+  &:focus {
+    background: var(--fg-color);
+    color: var(--bg-color);
+    outline: none;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 0 2px;
+    margin: 0 -2px;
+  }
 }
 
 %col {

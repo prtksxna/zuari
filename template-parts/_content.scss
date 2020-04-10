@@ -6,6 +6,7 @@
   transition: all var(--transition-duration) ease;
   //background-image: url('baseline.png');
 
+  &:focus-within,
   &:hover {
     .content__meta {
       opacity: 1;
@@ -61,6 +62,11 @@
   margin-left: 3px;
   margin-bottom: 6px;
   display: inline-block;
+
+  &:focus {
+    background: var(--fg-color);
+    color: var(--bg-color);
+  }
 }
 
 .content__title {

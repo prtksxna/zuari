@@ -44,7 +44,15 @@ html {
 
 a {
   color: var(--fg-color);
-  transition: color var(--transition-duration) ease; }
+  transition: color var(--transition-duration) ease, background-color var(--transition-duration) ease; }
+  a:focus {
+    background: var(--fg-color);
+    color: var(--bg-color);
+    outline: none;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 0 2px;
+    margin: 0 -2px; }
 
 .archive-header, .content-404, .post-navigation .nav-links,
 .posts-navigation .nav-links, .header__container, .header_type_bar, .no-comments, .comment-list, .comment-respond, #webmention-form, .footer__content, .content {
@@ -161,6 +169,11 @@ a {
   color: var(--fg-color);
   background-color: transparent;
   text-transform: uppercase; }
+  .search-submit:focus,
+  .search-field:focus {
+    background: var(--fade1-color);
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--fg-color); }
 
 .search-submit {
   border: none;
@@ -168,7 +181,12 @@ a {
   color: var(--bg-color);
   background-color: var(--fg-color);
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  border: 1px solid var(--fg-color); }
+  .search-submit:focus {
+    box-shadow: inset 0 0 0 2px var(--bg-color);
+    color: var(--bg-color);
+    background-color: var(--fg-color); }
 
 .widget-title {
   margin-bottom: 0; }
@@ -299,14 +317,18 @@ a {
 .comment-form input:focus,
 .comment-form textarea:focus {
   background: var(--fade1-color);
-  outline: none; }
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--fg-color); }
 
 .comment-form input[type="submit"] {
   border: none;
   color: var(--bg-color);
   background-color: var(--fg-color);
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  border: 1px solid var(--fg-color); }
+  .comment-form input[type="submit"]:focus {
+    box-shadow: inset 0 0 0 2px var(--bg-color); }
 
 .comment-form .required {
   display: none; }
@@ -349,7 +371,7 @@ a {
   margin-bottom: 50vh;
   padding-top: 0;
   transition: all var(--transition-duration) ease; }
-  .content:hover .content__meta {
+  .content:focus-within .content__meta, .content:hover .content__meta {
     opacity: 1;
     margin-left: -11rem; }
   .content.sticky {
@@ -389,6 +411,9 @@ a {
   margin-left: 3px;
   margin-bottom: 6px;
   display: inline-block; }
+  .content__meta__tags a:focus {
+    background: var(--fg-color);
+    color: var(--bg-color); }
 
 .content__title {
   font-size: 2rem;

@@ -17,6 +17,12 @@
   color: var(--fg-color);
   background-color: transparent;
   text-transform: uppercase;
+
+  &:focus {
+    background: var(--fade1-color);
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--fg-color);
+  }
 }
 
 .search-submit {
@@ -26,4 +32,11 @@
   background-color: var(--fg-color);
   text-transform: uppercase;
   font-weight: bold;
+  border: 1px solid var(--fg-color);
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px var(--bg-color);
+    color: var(--bg-color);
+    background-color: var(--fg-color);
+  }
 }

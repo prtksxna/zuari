@@ -129,7 +129,7 @@ function zuari_fgcolor_css() {
 	?>
 	<style media="screen">
 		:root {
-			--fg-color: <?php echo esc_attr(get_theme_mod('fgcolor', '000000')); ?>;
+			--fg-color: <?php echo esc_attr(get_theme_mod('fgcolor', '#000000')); ?>;
 		}
 	</style>
 <?php
