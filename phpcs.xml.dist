@@ -1,131 +1,91 @@
 <?xml version="1.0"?>
-<ruleset name="WordPress Theme Coding Standards">
-	<!-- See https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
-	<!-- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
-	<!-- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki -->
-	<!-- See https://github.com/wimg/PHPCompatibility -->
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Example Project" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 
-	<!-- Set a description for this ruleset. -->
-	<description>A custom set of code standard rules to check for WordPress themes.</description>
+	<description>A custom set of rules to check for a WPized WordPress project</description>
 
+	<!-- Exclude WP Core folders and files from being checked. -->
+	<exclude-pattern>/docroot/wp-admin/*</exclude-pattern>
+	<exclude-pattern>/docroot/wp-includes/*</exclude-pattern>
+	<exclude-pattern>/docroot/wp-*.php</exclude-pattern>
+	<exclude-pattern>/docroot/index.php</exclude-pattern>
+	<exclude-pattern>/docroot/xmlrpc.php</exclude-pattern>
+	<exclude-pattern>/docroot/wp-content/plugins/*</exclude-pattern>
+
+	<!-- Exclude the Composer Vendor directory. -->
+	<exclude-pattern>/vendor/*</exclude-pattern>
+
+	<!-- Exclude the Node Modules directory. -->
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+
+	<!-- Exclude minified Javascript files. -->
+	<exclude-pattern>*.min.js</exclude-pattern>
+
+	<!-- Include the WordPress-Extra standard. -->
+	<rule ref="WordPress-Extra">
+		<!--
+		We may want a middle ground though. The best way to do this is add the
+		entire ruleset, then rule by rule, remove ones that don't suit a project.
+		We can do this by running `phpcs` with the '-s' flag, which allows us to
+		see the names of the sniffs reporting errors.
+		Once we know the sniff names, we can opt to exclude sniffs which don't
+		suit our project like so.
+
+		The below two examples just show how you can exclude rules.
+		They are not intended as advice about which sniffs to exclude.
+		-->
+
+		<!--
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
+		<exclude name="WordPress.Security.EscapeOutput"/>
+		-->
+	</rule>
+
+	<!-- Let's also check that everything is properly documented. -->
+	<rule ref="WordPress-Docs"/>
+
+	<!-- Add in some extra rules from other standards. -->
+	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+	<rule ref="Generic.Commenting.Todo"/>
+
+	<!-- Check for PHP cross-version compatibility. -->
+	<!--
+	To enable this, the PHPCompatibilityWP standard needs
+	to be installed.
+	See the readme for installation instructions:
+	https://github.com/PHPCompatibility/PHPCompatibilityWP
+	For more information, also see:
+	https://github.com/PHPCompatibility/PHPCompatibility
+	-->
+	<!--
+	<config name="testVersion" value="5.2-"/>
+	<rule ref="PHPCompatibilityWP"/>
+	-->
 
 	<!--
-	#############################################################################
-	COMMAND LINE ARGUMENTS
-	https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
-	#############################################################################
+	To get the optimal benefits of using WPCS, we should add a couple of
+	custom properties.
+	Adjust the values of these properties to fit our needs.
+
+	For information on additional custom properties available, check out
+	the wiki:
+	https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties
 	-->
+	<config name="minimum_supported_wp_version" value="4.9"/>
 
-	<!-- Pass some flags to PHPCS:
-		 p flag: Show progress of the run.
-		 s flag: Show sniff codes in all reports.
-	-->
-	<arg value="ps"/>
-
-	<!-- Strip the filepaths down to the relevant bit. -->
-	<arg name="basepath" value="./"/>
-
-	<!-- Check up to 8 files simultanously. -->
-	<arg name="parallel" value="8"/>
-
-	<!-- Only check the PHP, CSS and SCSS files. JS files are checked separately with JSCS and JSHint. -->
-	<arg name="extensions" value="php,css,scss/css"/>
-
-	<!-- Check all files in this directory and the directories below it. -->
-	<file>.</file>
-
-
-	<!--
-	#############################################################################
-	USE THE WordPress RULESET
-	#############################################################################
-	-->
-
-	<rule ref="WordPress"/>
-
-
-	<!--
-	#############################################################################
-	SNIFF SPECIFIC CONFIGURATION
-	#############################################################################
-	-->
-
-	<!-- Verify that the text_domain is set to the desired text-domain.
-		 Multiple valid text domains can be provided as a comma-delimited list. -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="_s"/>
+			<property name="text_domain" type="array">
+				<element value="my-textdomain"/>
+				<element value="library-textdomain"/>
+			</property>
 		</properties>
 	</rule>
 
-	<!-- Allow for theme specific exceptions to the file name rules based
-		 on the theme hierarchy. -->
-	<rule ref="WordPress.Files.FileName">
-		<properties>
-			<property name="is_theme" value="true"/>
-		</properties>
-	</rule>
-
-	<!-- Set the minimum supported WP version. This is used by several sniffs.
-		 The minimum version set here should be in line with the minimum WP version
-		 as set in the "Requires at least" tag in the readme.txt file. -->
-	<config name="minimum_supported_wp_version" value="4.5"/>
-
-	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
-		<properties>
-			<!-- No need to adjust alignment of large arrays when the item with the largest key is removed. -->
-			<property name="exact" value="false"/>
-			<!-- Don't align multi-line items if ALL items in the array are multi-line. -->
-			<property name="alignMultilineItems" value="!=100"/>
-			<!-- Array assignment operator should always be on the same line as the array key. -->
-			<property name="ignoreNewlines" value="false"/>
-		</properties>
-	</rule>
-
-	<!-- Verify that everything in the global namespace is prefixed with a theme specific prefix.
-		 Multiple valid prefixes can be provided as a comma-delimited list. -->
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
-			<property name="prefixes" type="array" value="_s" />
-		</properties>
-	</rule>
-
-
-	<!--
-	#############################################################################
-	USE THE PHPCompatibility RULESET
-	#############################################################################
-	-->
-
-
-	<config name="testVersion" value="5.2-99.0"/>
-	<rule ref="PHPCompatibility">
-		<!-- Whitelist PHP native classes, interfaces, functions and constants which
-			 are back-filled by WP.
-
-			 Based on:
-			 * /wp-includes/compat.php
-			 * /wp-includes/random_compat/random.php
-		-->
-		<exclude name="PHPCompatibility.PHP.NewClasses.errorFound"/>
-		<exclude name="PHPCompatibility.PHP.NewClasses.typeerrorFound"/>
-
-		<exclude name="PHPCompatibility.PHP.NewConstants.json_pretty_printFound"/>
-		<exclude name="PHPCompatibility.PHP.NewConstants.php_version_idFound"/>
-
-		<exclude name="PHPCompatibility.PHP.NewFunctions.hash_equalsFound"/>
-		<exclude name="PHPCompatibility.PHP.NewFunctions.json_last_error_msgFound"/>
-		<exclude name="PHPCompatibility.PHP.NewFunctions.random_intFound"/>
-		<exclude name="PHPCompatibility.PHP.NewFunctions.random_bytesFound"/>
-		<exclude name="PHPCompatibility.PHP.NewFunctions.array_replace_recursiveFound"/>
-
-		<exclude name="PHPCompatibility.PHP.NewInterfaces.jsonserializableFound"/>
-	</rule>
-
-	<!-- Whitelist the WP Core mysql_to_rfc3339() function. -->
-	<rule ref="PHPCompatibility.PHP.RemovedExtensions">
-		<properties>
-			<property name="functionWhitelist" type="array" value="mysql_to_rfc3339"/>
+			<property name="prefixes" type="array">
+				<element value="my_prefix"/>
+			</property>
 		</properties>
 	</rule>
 

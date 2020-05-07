@@ -22,4 +22,7 @@ node_modules
 **/*.scss
 package.json
 package-lock.json
+composer.json
+composer.lock
+vendor
 ```

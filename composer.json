@@ -1,0 +1,27 @@
+{
+    "name": "prtksxna/zuari",
+    "type": "project",
+    "license": "GPL2",
+    "authors": [
+        {
+            "name": "Prateek Saxena",
+            "email": "prtksxna@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "wp-coding-standards/wpcs": "^2.2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "scripts": {
+        "lint": "phpcs **/*.php --ignore=vendor",
+        "install-codestandards": [
+            "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+        ],
+        "post-install-cmd": [
+            "@install-codestandards"
+        ]
+    }
+}
