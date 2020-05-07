@@ -9,10 +9,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'content' ); ?>>
 	<?php the_title( sprintf( '<h2 class="content__title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-	<?php if ( 'post' === get_post_type() ) : ?> <?php // TODO: WHAT TO DO HERE? ?>
+	<?php if ( 'post' === get_post_type() ) : // TODO: WHAT TO DO HERE? ?>
 		<div class="content__meta">
 			<?php
 			zuari_posted_on();

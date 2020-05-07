@@ -8,7 +8,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('content h-entry'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'content h-entry' ); ?>>
 		<div class="content__meta">
 			<?php
 			zuari_posted_on();
@@ -20,5 +20,6 @@
 			the_title( '<h1 class="content__title content__title_type_status e-content">', '</h1>' );
 		else :
 			the_title( '<h2 class="content__title content__title_type_status e-content"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif; ?>
+		endif;
+		?>
 </article><!-- .content ?> -->

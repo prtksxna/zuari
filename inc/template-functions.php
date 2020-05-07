@@ -47,7 +47,7 @@ add_action( 'wp_head', 'zuari_pingback_header' );
 function zuari_post_type_discovery() {
 	if (
 			has_post_thumbnail() &&
-			get_the_title() === ""
+			get_the_title() === ''
 	) {
 		return 'image';
 	}
@@ -69,8 +69,16 @@ function zuari_post_type_discovery() {
 	return get_post_type();
 }
 
+/**
+ * Detect what type of blog post this is. The return values should match
+ * get_post_format values where possible
+ *
+ * @link https://developer.wordpress.org/reference/functions/get_the_archive_title/
+ * @param String $title Archive title.
+ * @return String
+ */
 function zuari_archive_title( $title ) {
-	// From https://www.binarymoon.co.uk/2017/02/hide-archive-title-prefix-wordpress/
+	// From https://www.binarymoon.co.uk/2017/02/hide-archive-title-prefix-wordpress/.
 
 	// Skip if the site isn't LTR, this is visual, not functional.
 	// Should try to work out an elegant solution that works for both directions.

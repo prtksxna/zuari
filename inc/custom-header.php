@@ -13,13 +13,19 @@
  * @uses zuari_header_style()
  */
 function zuari_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'zuari_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'flex-width'             => true,
-		'flex-height'            => true,
-		'wp-head-callback'       => 'zuari_header_style',
-	) ) );
+	add_theme_support(
+		'custom-header',
+		apply_filters(
+			'zuari_custom_header_args',
+			array(
+				'default-image'      => '',
+				'default-text-color' => '000000',
+				'flex-width'         => true,
+				'flex-height'        => true,
+				'wp-head-callback'   => 'zuari_header_style',
+			)
+		)
+	);
 }
 add_action( 'after_setup_theme', 'zuari_custom_header_setup' );
 
@@ -51,10 +57,10 @@ if ( ! function_exists( 'zuari_header_style' ) ) :
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
 			}
-		<?php
-		// If the user has set a custom color for the text use that.
-		else :
-			?>
+			<?php
+			// If the user has set a custom color for the text use that.
+			else :
+				?>
 			.header a,
 			.header {
 				color: #<?php echo esc_attr( $header_text_color ); ?>;
