@@ -25,4 +25,5 @@ package-lock.json
 composer.json
 composer.lock
 vendor
+.stylelintrc.json
 ```
