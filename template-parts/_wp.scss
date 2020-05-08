@@ -18,8 +18,8 @@ figcaption {
   color: var(--fg-color);
 }
 
-blockquote.is-style-large,
-blockquote {
+blockquote,
+blockquote.is-style-large {
   padding: 0;
   margin: 0 1.5rem;
   margin-bottom: 1.5rem;
@@ -110,6 +110,7 @@ blockquote.is-style-large {
   float: left;
   margin-right: 1.5rem;
   margin-top: 0.3rem;
+
   @media only screen and (max-width: 660px) {
     margin-left: 0;
   }
@@ -159,6 +160,7 @@ blockquote.is-style-large {
 }
 
 .alignfull .wp-block-column {
+
   &:first-child {
     margin-left: 1rem;
   }
@@ -182,7 +184,7 @@ blockquote.is-style-large {
   border-radius: 0;
   border: 1px solid var(--fg-color);
   background: transparent;
-  color: var(--fg-color)
+  color: var(--fg-color);
 }
 
 .is-style-squared .wp-block-button__link {
@@ -190,14 +192,16 @@ blockquote.is-style-large {
 }
 
 .wp-block-spacer {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
 
 .wp-block-gallery .blocks-gallery-item {
+
   figcaption {
-    transition: opacity var(--transition-duration) ease,
+    transition:
+      opacity var(--transition-duration) ease,
       padding-bottom var(--transition-duration) ease;
     opacity: 0;
     line-height: 1rem;
@@ -218,25 +222,28 @@ p.has-drop-cap:not(:focus):first-letter {
 }
 
 table {
-    font-family: var(--body-alt-font);
-    border-collapse: collapse;
-    width: 100%;
+  font-family: var(--body-alt-font);
+  border-collapse: collapse;
+  width: 100%;
 
-    td, th {
-      border: 1px solid var(--fg-color);
-      padding: 0.5rem;
-      text-align: left;
+  td,
+  th {
+    border: 1px solid var(--fg-color);
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  &.is-style-stripes {
+
+    td,
+    th {
+      border: none;
     }
 
-    &.is-style-stripes {
-      td, th {
-        border: none;
-      }
-
-      tr:nth-child(odd) {
-        background: var(--fade2-color);
-      }
+    tr:nth-child(odd) {
+      background: var(--fade2-color);
     }
+  }
 }
 
 .page-links {
@@ -291,26 +298,30 @@ table {
 }
 
 // See functions.php for color names and values
-.has-brick-color { color: #825A58; }
-.has-baby-pink-color { color: #E0BAC0; }
-.has-ecru-color { color: #E1D9D3; }
-.has-peach-color { color: #E6AA88; }
-.has-sky-blue-color { color: #BADCE0; }
-.has-green-color { color: #81AE8A; }
+/* stylelint-disable block-opening-brace-newline-after */
+/* stylelint-disable block-closing-brace-newline-before */
+/* stylelint-disable rule-empty-line-before */
+.has-brick-color { color: #825a58; }
+.has-baby-pink-color { color: #e0bac0; }
+.has-ecru-color { color: #e1d9d3; }
+.has-peach-color { color: #e6aa88; }
+.has-sky-blue-color { color: #badce0; }
+.has-green-color { color: #81ae8a; }
 .has-olive-color { color: #959686; }
 .has-dark-green-color { color: #113118; }
-.has-dark-blue-color { color: #283D5D; }
+.has-dark-blue-color { color: #283d5d; }
 .has-light-gray-color { color: #eaeaea; }
 .has-dark-gray-color { color: #222; }
 
-.has-brick-background-color { background-color: #825A58; }
-.has-baby-pink-background-color { background-color: #E0BAC0; }
-.has-ecru-background-color { background-color: #E1D9D3; }
-.has-peach-background-color { background-color: #E6AA88; }
-.has-sky-blue-background-color { background-color: #BADCE0; }
-.has-green-background-color { background-color: #81AE8A; }
+.has-brick-background-color { background-color: #825a58; }
+.has-baby-pink-background-color { background-color: #e0bac0; }
+.has-ecru-background-color { background-color: #e1d9d3; }
+.has-peach-background-color { background-color: #e6aa88; }
+.has-sky-blue-background-color { background-color: #badce0; }
+.has-green-background-color { background-color: #81ae8a; }
 .has-olive-background-color { background-color: #959686; }
 .has-dark-green-background-color { background-color: #113118; }
-.has-dark-blue-background-color { background-color: #283D5D; }
+.has-dark-blue-background-color { background-color: #283d5d; }
 .has-light-gray-background-color { background-color: #eaeaea; }
 .has-dark-gray-background-color { background-color: #222; }
+/* stylelint-enable */
