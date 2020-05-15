@@ -2,8 +2,9 @@
   "name": "zuari",
   "version": "1.0.0",
   "scripts": {
-    "test": "stylelint **/*.scss",
-    "storybook": "start-storybook -s ./"
+    "stylelint": "stylelint **/*.scss",
+    "jest": "jest",
+    "storybook": "start-storybook --static-dir ./ --port 9001"
   },
   "repository": {
     "type": "git",
@@ -17,11 +18,15 @@
   "homepage": "https://github.com/prtksxna/zuari#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@storybook/addon-storyshots": "^5.3.18",
+    "@storybook/addon-storyshots-puppeteer": "^5.3.18",
     "@storybook/html": "^5.3.18",
     "babel-loader": "^8.1.0",
     "grunt": "^1.0.4",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
+    "jest": "^25.0.0",
+    "puppeteer": "^3.0.4",
     "stylelint": "^13.3.3",
     "stylelint-config-wordpress": "^16.0.0"
   }

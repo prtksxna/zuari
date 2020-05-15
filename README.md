@@ -27,4 +27,5 @@ composer.lock
 vendor
 .stylelintrc.json
 .storybook
+.babelrc
 ```
