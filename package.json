@@ -2,7 +2,8 @@
   "name": "zuari",
   "version": "1.0.0",
   "scripts": {
-    "test": "stylelint **/*.scss"
+    "test": "stylelint **/*.scss",
+    "storybook": "start-storybook -s ./"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,9 @@
   },
   "homepage": "https://github.com/prtksxna/zuari#readme",
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@storybook/html": "^5.3.18",
+    "babel-loader": "^8.1.0",
     "grunt": "^1.0.4",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
