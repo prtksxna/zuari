@@ -109,6 +109,16 @@
 
 .content__body {
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
   pre,
   p {
     margin: 0;
@@ -151,9 +161,7 @@
 .content__body_type_aside,
 .post_format-post-format-aside .content__body {
 
-  p {
-    font-family: var(--body-alt-font);
-  }
+  font-family: var(--body-alt-font);
 
   blockquote,
   blockquote p {

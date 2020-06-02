@@ -447,6 +447,14 @@ a {
   /* stylelint-disable block-closing-brace-newline-before */
   /* stylelint-disable rule-empty-line-before */
   /* stylelint-enable */ }
+  .content__body h1,
+  .content__body h2,
+  .content__body h3,
+  .content__body h4,
+  .content__body h5,
+  .content__body h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0; }
   .content__body pre,
   .content__body p {
     margin: 0;
@@ -706,14 +714,14 @@ a {
   font-size: 3rem;
   line-height: 3rem; }
 
-.content__body_type_aside p,
-.post_format-post-format-aside .content__body p {
+.content__body_type_aside,
+.post_format-post-format-aside .content__body {
   font-family: var(--body-alt-font); }
-.content__body_type_aside blockquote,
-.content__body_type_aside blockquote p,
-.post_format-post-format-aside .content__body blockquote,
-.post_format-post-format-aside .content__body blockquote p {
-  font-family: var(--body-font); }
+  .content__body_type_aside blockquote,
+  .content__body_type_aside blockquote p,
+  .post_format-post-format-aside .content__body blockquote,
+  .post_format-post-format-aside .content__body blockquote p {
+    font-family: var(--body-font); }
 
 .screen-reader-text {
   border: 0;
