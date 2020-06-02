@@ -473,6 +473,20 @@ a {
     margin-left: 0; }
   .content__body .wp-block-cover-text {
     font-family: var(--body-alt-font); }
+  .content__body .more-link {
+    font-family: var(--body-alt-font);
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-weight: 800;
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    display: block;
+    margin-top: -1rem; }
+    .content__body .more-link::after {
+      content: "…"; }
+    .content__body .more-link:hover {
+      text-decoration: underline; }
   .content__body .wp-block-image,
   .content__body img {
     margin: 0;

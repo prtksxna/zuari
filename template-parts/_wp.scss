@@ -2,6 +2,26 @@
   font-family: var(--body-alt-font);
 }
 
+.more-link {
+  font-family: var(--body-alt-font);
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-weight: 800;
+  font-size: 0.7rem;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  display: block;
+  margin-top: -1rem;
+
+  &::after {
+    content: "…";
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .wp-block-image,
 img {
   margin: 0;
