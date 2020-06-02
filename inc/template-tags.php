@@ -57,7 +57,7 @@ if ( ! function_exists( 'zuari_entry_footer' ) ) :
 				foreach ( get_the_tags() as $tag ) {
 					echo '<a rel=\"tag\" class=\"p-category\" href=\"';
 					echo esc_url( get_tag_link( $tag->term_id ) );
-					echo '\">' . $tag->name . '</a>\n'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					echo '\">' . $tag->name . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 			}
 			echo '</span>';
