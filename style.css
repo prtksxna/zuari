@@ -478,7 +478,8 @@ a {
     font-family: var(--body-alt-font);
     font-size: 0.7rem;
     line-height: 1.5;
-    color: var(--fg-color); }
+    color: var(--fg-color);
+    text-align: center; }
   .content__body blockquote,
   .content__body blockquote.is-style-large {
     padding: 0;
