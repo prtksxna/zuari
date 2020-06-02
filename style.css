@@ -469,6 +469,8 @@ a {
   .content__body img {
     margin: 0;
     max-width: 100%; }
+  .content__body .wp-block-image {
+    margin-bottom: 1.5rem; }
   .content__body .wp-caption,
   .content__body .wp-caption-text,
   .content__body .gallery-caption,
