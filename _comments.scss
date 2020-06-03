@@ -5,9 +5,13 @@
   font-size: 0.9rem;
 }
 
+.comments-area > ol,
+.comments-area > div {
+  @extend %col;
+}
+
 .no-comments {
   padding: 0;
-  @extend %col;
   font-family: var(--body-alt-font);
   text-transform: lowercase;
   font-variant: small-caps;
@@ -16,7 +20,6 @@
 
 .comment-list {
   padding: 0;
-  @extend %col;
 }
 
 .comment-list li {
@@ -48,7 +51,6 @@
 
 /* Form */
 .comment-respond {
-  @extend %col;
   font-family: var(--body-alt-font);
 }
 
@@ -134,4 +136,31 @@
   background-color: var(--fg-color);
   text-transform: uppercase;
   font-weight: bold;
+}
+
+// Semantic linkbacks
+.likes,
+.reposts {
+  font-family: var(--body-alt-font);
+
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.mention-list {
+  padding: 0;
+  margin: 0;
+
+  .p-author img {
+    border-radius: 100%;
+    border: 4px solid var(--bg-color);
+    margin-right: -32px;
+    transition: 300ms all ease;
+    background-color: var(--fg-color);
+  }
+
+  &:hover .p-author img{
+    margin-right: 0;
+  }
 }
