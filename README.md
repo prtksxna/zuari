@@ -8,24 +8,16 @@ npm install
 grunt
 ```
 
-## Stuff to delete before uploading
-Before you upload the theme to [WordPress.org](https://wordpress.org/themes/upload/), delete the following:
+## Release
+To create a new release for [WordPress.org](https://wordpress.org/themes/upload/):
 
+1. Run `grunt watch`
+2. Bump the version number in `style.scss`
+3. Commit the the message `chore: bump version to X.Y.Z`
+4. Tag the release
 ```
-.git
-.gitignore
-.sass-cache
-Gruntfile.js
-README.md
-style.css.map
-node_modules
-**/*.scss
-package.json
-package-lock.json
-composer.json
-composer.lock
-vendor
-.stylelintrc.json
-.storybook
-.babelrc
+git tag -a vX.Y.Z -m "vX.Y.Z"
+git push origin master
+git push origin --tags
 ```
+5. Create a zip file for WordPress by running `git archive master -o zuari.zip` and [upload](https://wordpress.org/themes/upload/)

@@ -1,14 +1,27 @@
+# Git
+.gitignore export-ignore
+.gitattributes export-ignore
+
+# Styles
 .sass-cache export-ignore
-Gruntfile.js export-ignore
-README.md export-ignore
 style.css.map export-ignore
-node_modules export-ignore
 **/*.scss export-ignore
+.stylelintrc.json export-ignore
+
+# Scripts
+Gruntfile.js export-ignore
 package.json export-ignore
 package-lock.json export-ignore
+node_modules export-ignore
+.storybook export-ignore
+.babelrc export-ignore
+
+# Github
+README.md export-ignore
+.github export-ignore
+
+# Composer
 composer.json export-ignore
 composer.lock export-ignore
 vendor export-ignore
-.stylelintrc.json export-ignore
-.storybook export-ignore
-.babelrc export-ignore
+phpcs.xml.dist export-ignore
