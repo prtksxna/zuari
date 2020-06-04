@@ -1,0 +1,18 @@
+%col {
+  width: var(--content-width);
+  margin: 0 auto;
+
+  @media only screen and (max-width: 660px) {
+    width: auto;
+    margin: 0 20px;
+  }
+}
+
+%heading {
+  font-family: var(--heading-font);
+  font-kerning: normal;
+
+  a {
+    text-decoration: none;
+  }
+}

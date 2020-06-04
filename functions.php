@@ -24,6 +24,8 @@ if ( ! function_exists( 'zuari_setup' ) ) :
 		 */
 		load_theme_textdomain( 'zuari', get_template_directory() . '/languages' );
 
+		add_theme_support( 'editor-styles' );
+		add_editor_style( 'editor-style.css' );
 
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );

@@ -1,0 +1,12 @@
+:root {
+  --bg-color: #eaeaea;
+  --fg-color: #000000;
+  --fade1-color: rgba( 255, 255, 255, 0.2 );
+  --fade2-color: rgba( 255, 255, 255, 0.4 );
+  --body-font: 'IBM Plex Serif', 'Garamond', 'Georgia', serif;
+  --body-alt-font: 'IBM Plex Sans', 'Helvetica Neue', 'Helvetica', 'Nimbus Sans L', 'Arial', sans-serif;
+  --heading-font: 'IBM Plex Sans Condensed', 'Roboto Condensed', 'HelveticaNeue-CondensedBold', 'Tahoma', sans-serif;
+  --mono-font: 'IBM Plex Mono', 'Monaco', 'Consolas', monospace;
+  --content-width: 640px;
+  --transition-duration: 333ms;
+}

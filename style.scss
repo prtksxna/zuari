@@ -8,7 +8,7 @@ Version: 1.4.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: zuari
-Tags: blog, one-column, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, flexible-header, footer-widgets, sticky-post, theme-options, translation-ready, block-styles, wide-blocks
+Tags: blog, one-column, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, flexible-header, footer-widgets, sticky-post, theme-options, translation-ready, block-styles, wide-blocks, editor-style
 GitHub Theme URI: prtksxna/zuari
 
 This theme, like WordPress, is licensed under the GPL.
@@ -17,75 +17,15 @@ zuari is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic,
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
-:root {
-  --bg-color: #eaeaea;
-  --fg-color: #000000;
-  --fade1-color: rgba( 255, 255, 255, 0.2 );
-  --fade2-color: rgba( 255, 255, 255, 0.4 );
-  --body-font: 'IBM Plex Serif', 'Garamond', 'Georgia', serif;
-  --body-alt-font: 'IBM Plex Sans', 'Helvetica Neue', 'Helvetica', 'Nimbus Sans L', 'Arial', sans-serif;
-  --heading-font: 'IBM Plex Sans Condensed', 'Roboto Condensed', 'HelveticaNeue-CondensedBold', 'Tahoma', sans-serif;
-  --mono-font: 'IBM Plex Mono', 'Monaco', 'Consolas', monospace;
-  --content-width: 640px;
-  --transition-duration: 333ms;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-display: fallback;
-  font-family: var(--body-font);
-  overflow-wrap: break-all;
-  font-size: 18px;
-  line-height: 1.5rem;
-  background: var(--bg-color);
-  color: var(--fg-color);
-  transition: background-color var(--transition-duration) ease,
-    color var(--transition-duration) ease;
-}
-
-a {
-  color: var(--fg-color);
-  transition: color var(--transition-duration) ease,
-    background-color var(--transition-duration) ease;
-
-  &:focus {
-    background: var(--fg-color);
-    color: var(--bg-color);
-    outline: none;
-    text-decoration: none;
-    border-radius: 2px;
-    padding: 0 2px;
-    margin: 0 -2px;
-  }
-}
-
-%col {
-  width: var(--content-width);
-  margin: 0 auto;
-
-  @media only screen and (max-width: 660px) {
-    width: auto;
-    margin: 0 20px;
-  }
-}
-
-%heading {
-  font-family: var(--heading-font);
-  font-kerning: normal;
-
-  a {
-    text-decoration: none;
-  }
-}
-
-@import 'archive';
-@import 'nav';
-@import 'search';
-@import 'blocks-widgets';
-@import 'header';
-@import 'comments';
-@import 'footer';
-@import 'template-parts/content';
-@import 'a11y';
+@import "settings";
+@import "base";
+@import "tools";
+@import "archive";
+@import "nav";
+@import "search";
+@import "blocks-widgets";
+@import "header";
+@import "comments";
+@import "footer";
+@import "template-parts/content";
+@import "a11y";

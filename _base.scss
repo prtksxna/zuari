@@ -1,0 +1,30 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-display: fallback;
+  font-family: var(--body-font);
+  overflow-wrap: break-all;
+  font-size: 18px;
+  line-height: 1.5rem;
+  background: var(--bg-color);
+  color: var(--fg-color);
+  transition: background-color var(--transition-duration) ease,
+    color var(--transition-duration) ease;
+}
+
+a {
+  color: var(--fg-color);
+  transition: color var(--transition-duration) ease,
+    background-color var(--transition-duration) ease;
+
+  &:focus {
+    background: var(--fg-color);
+    color: var(--bg-color);
+    outline: none;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 0 2px;
+    margin: 0 -2px;
+  }
+}
