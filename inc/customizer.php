@@ -135,6 +135,7 @@ add_action( 'customize_preview_init', 'zuari_customize_preview_js' );
  */
 function zuari_header_bgcolor_css() {
 	?>
+	<meta name="theme-color" content="<?php echo esc_attr( get_theme_mod( 'header_bgcolor', 'eaeaea' ) ); ?>">
 	<style media="screen">
 		.header {
 			background-color: <?php echo esc_attr( get_theme_mod( 'header_bgcolor', 'eaeaea' ) ); ?>;
