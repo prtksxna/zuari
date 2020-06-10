@@ -168,7 +168,7 @@ add_action( 'widgets_init', 'zuari_widgets_init' );
  */
 function zuari_scripts() {
 	wp_enqueue_style( 'zuari-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'zuari-google-fonts', 'https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400|IBM+Plex+Sans+Condensed:700|IBM+Plex+Serif:300i,400,400i,700|IBM+Plex+Sans:100,300i,400,700&display=fallback', false );
+	wp_enqueue_style( 'zuari-google-fonts', zuari_google_font(), false );
 
 	wp_enqueue_script( 'zuari-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'scroll', get_template_directory_uri() . '/js/scroll.js', array('jquery'), false, true );
@@ -186,6 +186,23 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 	function wp_body_open() {
 		do_action( 'wp_body_open' );
 	}
+}
+
+/**
+ * Create URL for loading fonts from Google.
+ */
+function zuari_google_font() {
+	$mono_font     = str_replace( ' ', '+', get_theme_mod( 'mono_font' ) ) . ':400';
+	$heading_font  = str_replace( ' ', '+', get_theme_mod( 'heading_font' ) ) . ':700';
+	$body_font     = str_replace( ' ', '+', get_theme_mod( 'body_font' ) ) . ':300i,400,400i,700';
+	$body_alt_font = str_replace( ' ', '+', get_theme_mod( 'body_alt_font' ) ) . ':100,300i,400,400i,700';
+	$url           = 'https://fonts.googleapis.com/css?family=' .
+		$mono_font . '|' .
+		$heading_font . '|' .
+		$body_font . '|' .
+		$body_alt_font . '|' .
+		'&display=fallback';
+	return $url;
 }
 
 /**

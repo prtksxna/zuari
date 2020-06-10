@@ -17,6 +17,7 @@ function zuari_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_image' )->transport      = 'postMessage';
 	$wp_customize->get_setting( 'header_image_data' )->transport = 'postMessage';
 
+	// Colors.
 	$wp_customize->add_setting(
 		'header_bgcolor',
 		array(
@@ -79,6 +80,107 @@ function zuari_customize_register( $wp_customize ) {
 				'settings' => 'enable_darkmode',
 				'type'     => 'checkbox',
 			)
+		)
+	);
+
+	// Typography.
+	$wp_customize->add_section(
+		'typography',
+		array(
+			'title'    => __( 'Typography', 'zuari' ),
+			'priority' => 90, // Before Widgets.
+		)
+	);
+
+	$wp_customize->add_setting(
+		'mono_font',
+		array(
+			'default'   => 'IBM Plex Mono',
+			'transport' => 'refresh',
+		)
+	);
+
+	$wp_customize->add_control(
+		'mono_font',
+		array(
+			'type'    => 'select',
+			'section' => 'typography',
+			'label'   => __( 'Site title font (Mono)', 'zuari' ),
+			'choices' => array(
+				'IBM Plex Mono'   => 'IBM Plex Mono',
+				'Space Mono'      => 'Space Mono',
+				'Source Code Pro' => 'Source Code Pro',
+				'Fira Mono'       => 'Fira Mono',
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'heading_font',
+		array(
+			'default'   => 'IBM Plex Sans Condensed',
+			'transport' => 'refresh',
+		)
+	);
+
+	$wp_customize->add_control(
+		'heading_font',
+		array(
+			'type'    => 'select',
+			'section' => 'typography',
+			'label'   => __( 'Heading font (Condensed)', 'zuari' ),
+			'choices' => array(
+				'IBM Plex Sans Condensed' => 'IBM Plex Sans Condensed',
+				'Archivo Narrow'          => 'Archivo Narrow',
+				'Barlow Condensed'        => 'Barlow Condensed',
+				'Roboto Condensed'        => 'Roboto Condensed',
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'body_font',
+		array(
+			'default'   => 'IBM Plex Serif',
+			'transport' => 'refresh',
+		)
+	);
+
+	$wp_customize->add_control(
+		'body_font',
+		array(
+			'type'    => 'select',
+			'section' => 'typography',
+			'label'   => __( 'Body font (Serif)', 'zuari' ),
+			'choices' => array(
+				'IBM Plex Serif'   => 'IBM Plex Serif',
+				'Source Serif Pro' => 'Source Serif Pro',
+				'Merriweather'     => 'Merriweather',
+				'Lora'             => 'Lora',
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'body_alt_font',
+		array(
+			'default'   => 'IBM Plex Sans',
+			'transport' => 'refresh',
+		)
+	);
+
+	$wp_customize->add_control(
+		'body_alt_font',
+		array(
+			'type'    => 'select',
+			'section' => 'typography',
+			'label'   => __( 'Body font alternative (Sans serif)', 'zuari' ),
+			'choices' => array(
+				'IBM Plex Sans'   => 'IBM Plex Sans',
+				'Source Sans Pro' => 'Source Sans Pro',
+				'Poppins'         => 'Poppins',
+				'Rubik'           => 'Rubik',
+			),
 		)
 	);
 
@@ -198,3 +300,32 @@ function zuari_sanitize_enable_darkmode( $input ) {
 	}
 	return '';
 }
+
+/**
+ * Render the selected fonts
+ *
+ * @return void
+ */
+function zuari_typography() {
+	$mono_font     = get_theme_mod( 'mono_font', 'IBM Plex Mono' );
+	$heading_font  = get_theme_mod( 'heading_font', 'IBM Plex Sans Condensed' );
+	$body_font     = get_theme_mod( 'body_font', 'IBM Plex Serif' );
+	$body_alt_font = get_theme_mod( 'body_alt_font', 'IBM Plex Sans' );
+
+	$mono_font     = '"' . $mono_font . '", "Monaco", "Consolas", monospace;';
+	$heading_font  = '"' . $heading_font . '", "Monaco", "Consolas", monospace;, "Roboto Condensed", "HelveticaNeue-CondensedBold", "Tahoma", sans-serif';
+	$body_font     = '"' . $body_font . '", "Garamond", "Georgia", serif;';
+	$body_alt_font = '"' . $body_alt_font . '", "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", sans-serif;';
+
+	?>
+	<style media="screen">
+		:root {
+			--mono-font: <?php echo $mono_font; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>;
+			--heading-font: <?php echo $heading_font; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>;
+			--body-font: <?php echo $body_font; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>;
+			--body-alt-font: <?php echo $body_alt_font; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>;
+		}
+	</style>
+	<?php
+}
+add_action( 'wp_head', 'zuari_typography' );
