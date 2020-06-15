@@ -51,6 +51,12 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 * Fix: Better image margins and captions
 * Fix: Improve styling for "Continue reading"
 * Fix: Styling of semantic-linkbacks
+=== 1.5.0 ===
+* Feature: Add editor styles
+* Feature: Use colors in meta theme-color
+* Feature: Add font customization
+* Fix: Stop loading unnecessary font weights
+* Fix: Broken tag links
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
