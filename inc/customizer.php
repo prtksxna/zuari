@@ -95,8 +95,9 @@ function zuari_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'mono_font',
 		array(
-			'default'   => 'IBM Plex Mono',
-			'transport' => 'refresh',
+			'default'           => 'IBM Plex Mono',
+			'transport'         => 'refresh',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
@@ -118,8 +119,9 @@ function zuari_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'heading_font',
 		array(
-			'default'   => 'IBM Plex Sans Condensed',
-			'transport' => 'refresh',
+			'default'           => 'IBM Plex Sans Condensed',
+			'transport'         => 'refresh',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
@@ -141,8 +143,9 @@ function zuari_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'body_font',
 		array(
-			'default'   => 'IBM Plex Serif',
-			'transport' => 'refresh',
+			'default'           => 'IBM Plex Serif',
+			'transport'         => 'refresh',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
@@ -164,8 +167,9 @@ function zuari_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'body_alt_font',
 		array(
-			'default'   => 'IBM Plex Sans',
-			'transport' => 'refresh',
+			'default'           => 'IBM Plex Sans',
+			'transport'         => 'refresh',
+			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
 
