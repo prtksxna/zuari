@@ -4,7 +4,7 @@
 
 # Styles
 .sass-cache export-ignore
-style.css.map export-ignore
+*.css.map export-ignore
 **/*.scss export-ignore
 .stylelintrc.json export-ignore
 
