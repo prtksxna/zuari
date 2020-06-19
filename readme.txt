@@ -57,6 +57,8 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 * Feature: Add font customization
 * Fix: Stop loading unnecessary font weights
 * Fix: Broken tag links
+=== 1.6.0 ===
+* Feature: Add styling for CodeMirror plugin
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
