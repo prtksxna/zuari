@@ -1,0 +1,17 @@
+.wp-block-codemirror-blocks-code-block {
+  margin: 8px -32px;
+  font-size: 75%;
+
+  .cm-s-material.CodeMirror {
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  pre {
+    margin: 0;
+  }
+
+  .CodeMirror-lines {
+    padding: 0;
+  }
+}

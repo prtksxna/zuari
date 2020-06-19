@@ -805,5 +805,15 @@ a {
     opacity: 1; }
   .content__body p {
     line-height: 1.75rem; } }
+.wp-block-codemirror-blocks-code-block {
+  margin: 8px -32px;
+  font-size: 75%; }
+  .wp-block-codemirror-blocks-code-block .cm-s-material.CodeMirror {
+    padding: 32px;
+    border-radius: 8px; }
+  .wp-block-codemirror-blocks-code-block pre {
+    margin: 0; }
+  .wp-block-codemirror-blocks-code-block .CodeMirror-lines {
+    padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
