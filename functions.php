@@ -192,10 +192,11 @@ if ( ! function_exists( 'wp_body_open' ) ) {
  * Create URL for loading fonts from Google.
  */
 function zuari_google_font() {
-	$mono_font     = str_replace( ' ', '+', get_theme_mod( 'mono_font' ) ) . ':400';
-	$heading_font  = str_replace( ' ', '+', get_theme_mod( 'heading_font' ) ) . ':700';
-	$body_font     = str_replace( ' ', '+', get_theme_mod( 'body_font' ) ) . ':300i,400,400i,700';
-	$body_alt_font = str_replace( ' ', '+', get_theme_mod( 'body_alt_font' ) ) . ':100,300i,400,400i,700';
+	$mono_font     = str_replace( ' ', '+', get_theme_mod( 'mono_font', 'IBM Plex Mono' ) ) . ':400';
+	$heading_font  = str_replace( ' ', '+', get_theme_mod( 'heading_font', 'IBM Plex Sans Condensed' ) ) . ':700';
+	$body_font     = str_replace( ' ', '+', get_theme_mod( 'body_font', 'IBM Plex Serif' ) ) . ':300i,400,400i,700';
+	$body_alt_font = str_replace( ' ', '+', get_theme_mod( 'body_alt_font', 'IBM Plex Sans' ) ) . ':100,300i,400,400i,700';
+
 	$url           = 'https://fonts.googleapis.com/css?family=' .
 		$mono_font . '|' .
 		$heading_font . '|' .
