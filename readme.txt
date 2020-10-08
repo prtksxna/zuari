@@ -3,8 +3,8 @@ Contributors: prtksxna, siddr, automattic
 Tags: blog, one-column, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, flexible-header, footer-widgets, sticky-post, theme-options, translation-ready, block-styles, wide-blocks
 Requires PHP: 5.6
 Requires at least: 5.2
-Tested up to: 5.2.1
-Stable tag: 1.4.0
+Tested up to: 5.5.1
+Stable tag: 1.6.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -59,7 +59,10 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 * Fix: Broken tag links
 === 1.6.0 ===
 * Feature: Add styling for CodeMirror plugin
-== Credits ==
+=== 1.6.1 ===
+* Fix: Load correct Google Fonts when the font customizations are default
+* Chore: Test up on WordPress 5.5
 
+== Credits ==
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * IBM Plex https://www.ibm.com/plex/
