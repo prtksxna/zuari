@@ -29,6 +29,17 @@
   font-weight: normal;
 }
 
+.top-navigation--portfolio li {
+  margin-right: 0;
+  margin-left: 1rem;
+
+  @media only screen and (max-width: 660px) {
+    margin-right: 1rem;
+    margin-left: 0;
+
+  }
+}
+
 // Post navigation
 .post-navigation,
 .posts-navigation {

@@ -1,0 +1,45 @@
+.portfolio-grid {
+  @extend %wide-col;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-tile {
+  width: 30%;
+  margin-bottom: 6rem;
+
+  &:nth-child(3n-1) {
+    margin: 0 5% 6rem;
+
+    @media only screen and (max-width: 660px) {
+      margin: 0 0 6rem;
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+    width: 100%;
+    margin: 0 0 6rem;
+  }
+}
+
+.portfolio__title {
+  font-family: var(--body-alt-font);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.portfolio-tile img {
+  border-radius: 2px;
+}
+
+.portfolio__desc {
+  font-family: var(--body-alt-font);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin: 0;
+}

@@ -30,6 +30,11 @@
   padding-top: 10rem;
 }
 
+.content--wide {
+  @extend %wide-col;
+  margin-bottom: 50vh;
+}
+
 .content__meta {
   width: 10rem;
   margin-top: 0;

@@ -61,3 +61,20 @@
   font-weight: normal;
   font-style: italic;
 }
+
+// for portfolio
+.header_type_bar--portfolio {
+  @extend %wide-col;
+  padding: 4rem 0;
+  margin-bottom: 6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  @media only screen and (max-width: 660px) {
+    display: block;
+    padding-top: 0.3rem;
+    margin-bottom: 2rem;
+ }
+}
