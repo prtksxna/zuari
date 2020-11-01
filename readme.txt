@@ -17,7 +17,7 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 
 == Changelog ==
 
-= 1.0 - May 26 2019 =
+== 1.0.0 (26 May 2019) ==
 * Initial release
 === 1.0.1 ===
 * Changes suggested by Rabmalin during review
@@ -62,6 +62,9 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 === 1.6.1 ===
 * Fix: Load correct Google Fonts when the font customizations are default
 * Chore: Test up on WordPress 5.5
+== 2.0.0 (1 November 2020) ==
+* Feature: Add a grid layout for projects in Portfolio (Jetpack)
+* Feature: Make projects pages wider for Portfolio (Jetpack)
 
 == Credits ==
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
