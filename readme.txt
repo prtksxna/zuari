@@ -65,7 +65,8 @@ The Zuari theme for Wordpress is minimal yet extensive. It has different styles 
 == 2.0.0 (1 November 2020) ==
 * Feature: Add a grid layout for projects in Portfolio (Jetpack)
 * Feature: Make projects pages wider for Portfolio (Jetpack)
-
+=== 2.1.0 ===
+* Feature: Color change for posts, pages and projects if metadata is available
 == Credits ==
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * IBM Plex https://www.ibm.com/plex/
