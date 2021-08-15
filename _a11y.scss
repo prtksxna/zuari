@@ -35,26 +35,3 @@
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
-
-/* Setting dark-mode */
-@media (prefers-color-scheme: dark) {
-	// The colors are being changed from the `zuari_dark_mode`
-	// function in `inc/customizer.php`. This is because it loads
-	// a <style> tag AFTER all the customizations, thus
-	// overriding them.
-
-	.content__body {
-		img {
-	    opacity: 0.75;
-	    transition: opacity var(--transition-duration);
-	  }
-
-	  img:hover {
-	    opacity: 1;
-	  }
-
-		p {
-			line-height: 1.75rem;
-		}
-	}
-}
