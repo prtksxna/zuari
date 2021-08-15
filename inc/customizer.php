@@ -276,16 +276,31 @@ function zuari_dark_mode() {
 	if ( get_theme_mod( 'enable_darkmode' ) === '1' ) {
 		?>
 			<style media="screen">
-			@media (prefers-color-scheme: dark) {
-				:root {
-					--bg-color: #222;
-					--fg-color: #bdc3c7;
-				}
+			
+			/* Setting dark-mode */
+ 			@media (prefers-color-scheme: dark) {
 
-				body.custom-background {
-					background-color: var(--bg-color) !important;
-				}
-			}
+ 				:root {
+ 					--bg-color: #222;
+ 				}
+
+ 				body.custom-background {
+ 					background-color: var(--bg-color) !important;
+ 				}
+
+ 				.content__body img {
+ 	    				opacity: 0.75;
+ 	   				transition: opacity var(--transition-duration);
+ 	  			}
+
+ 	  			.content__body img:hover {
+ 	    				opacity: 1;
+ 	  			}
+
+ 				.content__body p {
+ 					line-height: 1.75rem;
+ 				}
+ 			}
 			</style>
 		<?php
 	}
