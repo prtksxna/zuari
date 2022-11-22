@@ -18,9 +18,9 @@
   "homepage": "https://github.com/prtksxna/zuari#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
-    "@storybook/addon-storyshots": "^5.3.18",
+    "@storybook/addon-storyshots": "^6.5.13",
     "@storybook/addon-storyshots-puppeteer": "^5.3.18",
-    "@storybook/html": "^5.3.18",
+    "@storybook/html": "^6.5.13",
     "babel-loader": "^8.1.0",
     "grunt": "^1.0.4",
     "grunt-contrib-sass": "^1.0.0",
